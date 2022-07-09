@@ -1,152 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enroll Here</title>
-    <style>
-        body{
-            background-color: darkslategrey;
-            color: #fff;
-        }
-        h1{
-            text-align: center;
-        }
-        .form{
-            width: 1100px;
-            height: 1000px;
-            margin-left: 600px;
-            margin-top: 60px;
-
-
-        }
-        .row_tab{
-            display: inline-block;
-            margin-bottom: 30px;
-            
-        }
-        .label{
-            width: 400px;
-            text-align: left; 
-            display: block; 
-            margin-bottom: 10px;  
-        }
-        label{
-            font-size: 20px;
-            
-        }
-        .input{
-            width: 400px;
-            text-align: left;
-            display: block;
-        }
-        input{
-            font-size: 20px;
-            width: 300px;
-            height: 40px;
-            border-width: 3px;
-            border-radius: 15px;
-            background-color: black;
-            color: #fff;
-        }
-        .btn{
-            width: 100px;
-            height: 50px;
-            border-radius: 10px;
-            margin-top: 50px;
-            margin-left: 300px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enroll Form</title>
+  {% load static %} 
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'bootstrap.bundle.min.js'%}">
+    <link rel="stylesheet" href="{% static 'enroll.css'%}">
 </head>
 <body>
-    <h1>FE Preparation Course Enroll Here</h1>
-    <div class="form">
-        <form action="addrecord/" method="post">
-            {% csrf_token %}
-            <div class="main">
-                <div class="row_tab">
-                    <div class="label">
-                        <label>First Name:</label>
-                    </div>
-                    <div class="input">
-                        <input name="first" placeholder="Enter Your First Name:">
-                    </div>
-                </div>
-                <div class="row_tab">
-                    <div class="label">
-                        <label>Last Name:</label>
-                    </div>
-                    <div class="input">
-                        <input name="last" placeholder="Enter Your Last Name:">
-                    </div>
-                </div>
-                <div class="row_tab">
-                    <div class="label">
-                        <label>Father Name:</label>
-                    </div>
-                    <div class="input">
-                        <input name="father" placeholder="Enter Your Father Name:">
-                    </div>
-                </div>
-                <div class="row_tab">
-                    <div class="label">
-                        <label>Date of Birth:</label>
-                    </div>
-                    <div class="input">
-                        <input name="dob" placeholder="Enter Your Birthday:">
-                    </div>
-                </div>
-                <div class="row_tab">
-                    <div class="label">
-                        <label>NRC No:</label>
-                    </div>
-                    <div class="input">
-                        <input name="nrc" placeholder="Enter Your NRC Number:">
-                    </div>
-                </div>
-                <div class="row_tab">
-                    <div class="label">
-                        <label>Contact No:</label>
-                    </div>
-                    <div class="input">
-                        <input name="contact" placeholder="Enter Your Phone Number:">
-                    </div>
-                </div>
-                <div class="row_tab">
-                    <div class="label">
-                        <label>Email Address:</label>
-                    </div>
-                    <div class="input">
-                        <input name="email" placeholder="Enter Your Email:">
-                    </div>
-                </div>
-                <div class="row_tab">
-                    <div class="label">
-                        <label>Parmanent Address:</label>
-                    </div>
-                    <div class="input">
-                        <input name="address" placeholder="Enter Your Parmanent Address:">
-                    </div>
-                </div>
-                <div class="row_tab">
-                    <div class="label">
-                        <label>Education Background:</label>
-                    </div>
-                    <div class="input">
-                        <input name="edu" placeholder="Enter Your Education:">
-                    </div>
-                </div>
-                <div>
-                    {% for message in messages %} 
-                    <p style="color: red;">{{message}}</p>
-                    {% endfor %}
-                </div>
-                <div>
-                    <input class="btn" type="submit"  value="Submit">
-                </div>
-            </div>
-        </form>
+  <div class="container-fluid p-3 bg-dark text-white text-center">
+    <img src="{% static 'logo.jpg'%}" width="100px" alt="">
+    <h1>JKT Digital Institute</h1>
+    <p>FE Exam Preparation Course</p> 
+  </div>
+  <div class="container mt-3">
+    <h2 class="">FE Student Registeration Forms</h2>
+    <p>Please Enter Your Detail Information Here!</p>
+    <form action="addrecord/" method="post">
+      {% csrf_token %}
+      <div class="row">
+        <div class="col">
+          <label for=""><h6>First Name: </h6></label>
+          <input type="text" class="form-control" placeholder="Enter First Name:" name="first">
+        </div>
+        <div class="col">
+          <label for=""><h6>Last Name: </h6></label>
+          <input type="text"  class="form-control" placeholder="Enter Last Name:" name="last">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for=""><h6>Father Name: </h6></label>
+          <input type="text" class="form-control" placeholder="Enter Father Name:" name="father">
+        </div>
+        <div class="col">
+          <label for=""><h6>Date of Birth: </h6></label>
+          <input type="date" class="form-control" placeholder="Name" name="dob">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for=""><h6>NRC No: </h6></label>
+          <input type="text" class="form-control" placeholder="Enter Your NRC No:" name="nrc">
+        </div>
+        <div class="col">
+          <label for=""><h6>Phone No: </h6></label>
+          <input type="text" class="form-control" placeholder="Enter Your Phone Number: " name="contact">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for=""><h6>Email Address: </h6></label>
+          <input type="email" class="form-control" placeholder="Enter Your Email:" name="email">
+        </div>
+        <div class="col">
+          <label for=""><h6>Permanent Address: </h6></label>
+          <input type="text" class="form-control" placeholder="Enter Your Address:" name="address">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for=""><h6>Education: </h6></label>
+          <input type="text" class="form-control" placeholder="Enter Your Education Level: " name="edu">
+        </div>
+      </div>
+      <div>
+        {% for message in messages %} 
+        <p style="color:red;">{{message}}</p>
+        {% endfor %}
+      </div>
+      <div class="row"> 
+          <input class="btn" type="submit" name="submit" >
+      </div>
+    </form>
+  </div>
+  <footer class="bg-dark text-center text-white">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-white" href="https://wlktech.github.io/">WLK-TECH</a>
     </div>
+    <!-- Copyright -->
+  </footer>
+    
+  
 </body>
 </html>

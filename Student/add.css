@@ -1,0 +1,16 @@
+.row{
+    margin: 20px;
+}
+img{
+    border-radius: 50%;
+}
+
+.btn{
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    margin: auto;
+    background-color: black;
+    color: #fff;
+    
+}

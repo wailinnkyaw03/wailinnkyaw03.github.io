@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .error{
+            border-color: red;
+        }
+        small{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div align="center" style="background-color: grey; color:white;width:300px; height:250px;margin:auto;padding:10px; border-radius: 30px;">
+        <h1>Calculator</h1>
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="num1">Number One</label></td>
+                <td><input type="number" name="num1" id="num1"><br>
+                    <small id="num1_err"></small></td>
+            </tr>
+            <tr>
+                <td><label for="num2">Number Two</label></td>
+                <td><input type="number" name="num2" id="num2"><br>
+                    <small id="num2_err"></small></td>
+            </tr>
+            <tr style="margin:auto; margin-bottom:10px; ">
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><label for="result">Result</label></td>
+                <td><input type="number" name="result" id="result"></td>
+            </tr>
+            <tr align="center">
+                <td><button type="button" onclick="add()">ADD</button></td>
+                <td><button type="button" onclick="sub()">SUB</button></td>
+            </tr>
+        </table>
+        
+    </form>
+    </div>
+    <script>
+        function formValidation(){
+            let num1 = document.querySelector('#num1');
+            let num2 = document.querySelector('#num2');
+
+            let num1_err = document.querySelector('#num1_err');
+            let num2_err = document.querySelector('#num2_err')
+
+            let number1 = num1.value;
+            let number2 = num2.value;
+
+            if (number1 === '' || number2 === ''){
+                num1_err.innerHTML = '';
+                num2_err.innerHTML = '';
+                num1.removeAttribute('class');
+                num2.removeAttribute('class');
+
+
+                if (number1 ===''){
+                    showError(num1_err, num1, 'Number one is required');
+                }
+                if (number2 ===''){
+                    showError(num2_err, num2, 'Number two is required');
+                }
+                function showError(numError, numInput, message){
+                    numError.innerHTML=message;
+                    numInput.setAttribute('class', 'error');
+                }
+
+            }else{
+                num1_err.innerHTML = '';
+                num2_err.innerHTML = '';
+                num1.removeAttribute('class');
+                num2.removeAttribute('class');
+
+                return {number1, number2};
+            }
+        }
+
+
+        function add(){
+            let numbers = formValidation();
+            console.log(numbers);
+
+            if (numbers){
+                let result = parseInt(numbers.number1)+parseInt(numbers.number2);
+                console.log(result);
+                document.querySelector('#result').value = result;
+            }
+            
+
+        }
+        function sub(){
+            let numbers = formValidation();
+            console.log(numbers);
+            if (numbers){
+                let result = parseInt(numbers.number1)-parseInt(numbers.number2);
+                console.log(result);
+                document.querySelector('#result').value = result;
+            }
+        }
+    </script>
+</body>
+</html>

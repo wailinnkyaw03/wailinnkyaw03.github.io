@@ -15,7 +15,7 @@
     </style>
 </head>
 <body>
-    <div align="center" style="background-color: grey; color:white;width:300px; height:250px;margin:auto;padding:10px; border-radius: 30px;">
+    <div align="center" style="background-color: black; color:white;width:300px; height:auto;margin:auto;padding:10px;padding-bottom:40px; border-radius: 30px;">
         <h1>Calculator</h1>
     <form action="">
         <table>
@@ -40,6 +40,10 @@
             <tr align="center">
                 <td><button type="button" onclick="add()">ADD</button></td>
                 <td><button type="button" onclick="sub()">SUB</button></td>
+            </tr>
+            <tr align="center">
+                <td><button type="button" onclick="multiply()">MULTIPLY</button></td>
+                <td><button type="button" onclick="divide()">DIVIDE</button></td>
             </tr>
         </table>
         
@@ -102,6 +106,24 @@
             console.log(numbers);
             if (numbers){
                 let result = parseInt(numbers.number1)-parseInt(numbers.number2);
+                console.log(result);
+                document.querySelector('#result').value = result;
+            }
+        }
+        function multiply(){
+            let numbers = formValidation();
+            console.log(numbers);
+            if (numbers){
+                let result = parseInt(numbers.number1)*parseInt(numbers.number2);
+                console.log(result);
+                document.querySelector('#result').value = result;
+            }
+        }
+        function divide(){
+            let numbers = formValidation();
+            console.log(numbers);
+            if (numbers){
+                let result = parseInt(numbers.number1)/parseInt(numbers.number2);
                 console.log(result);
                 document.querySelector('#result').value = result;
             }

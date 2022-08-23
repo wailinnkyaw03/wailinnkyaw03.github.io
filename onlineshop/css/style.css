@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face{
+    src: url(../lobster/Lobster-Regular.ttf);
+    font-family: lobster;
+}
+.logo{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.brand_name{
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    right: 15px;
+    font-family: lobster;
+    font-size: 18px;
+}
+.navbar ul{
+    float: right;
+}
+.navbar ul li{
+    display: inline-block;
+    margin-right:50px;
+    margin-top: 15px;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+.navbar ul li a:hover{
+    letter-spacing: 10px;
+    transition-duration: .6s;
+    color: aqua;
+    text-shadow: 1px 2px 3px grey;
+}
+.navbar{
+    background-color: pink;
+}
+.bg_text{
+    position: absolute;
+    top: 280px;
+    left: 70px;
+    width: 600px;
+}
+.bg_text h1{
+    margin-bottom: 20px;
+    font-family: lobster;
+}

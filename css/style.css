@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    color: white;
+}
+h1{
+    text-align: center;
+    color: red;
+    animation: moveright 1s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes moveright{
+    0%{
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform:translateX(0);
+        visibility: visible;
+    }
+}
+.form{
+    width:60%;
+    margin: auto; 
+}
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"]{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus{
+    border: 4px solid pink;
+    border-radius: 5px;
+}
+input[type="radio"]:checked+label{
+    color: red;
+    letter-spacing: 10px;
+}
+#address{
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    outline: none;
+}
+input[type="checkbox"]:enabled +label{
+    color: blue;
+    font-style: italic;
+}
+input[type="checkbox"]:checked+label{
+    color: red;
+    font-style: normal;
+}
+input[type="checkbox"]:disabled+label{
+    color: rgb(191, 191, 191);
+    font-style: normal;
+}
+ul li:first-child{
+    color: red;
+}
+ul li:last-child{
+    color: blue;
+}
+ul li:nth-child(5){
+    color: yellow;
+}
+p:empty{
+    height: 30px;
+    background-color: red;
+}
+
+

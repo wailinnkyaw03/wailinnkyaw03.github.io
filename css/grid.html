@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .grid-one div, .grid-two div, .grid-three div, .grid-four div, .grid-5 div, .grid-6 div{
+            padding: 10px;
+
+        }
+        .grid-one, .grid-two, .grid-three, .grid-four, .grid-5, .grid-6{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .grid-two{
+            grid-column-gap: 30px;
+        }
+        .grid-three{
+            grid-row-gap: 10px;
+        }
+        .grid-four{
+            grid-gap: 20px;
+        }
+        .grid-5{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }  
+    </style>
+</head>
+<body>
+    <h1>Grid Columns</h1>
+    <div class="grid-one">
+        <div style="background-color: red;">1</div>
+        <div style="background-color: green;">2</div>
+        <div style="background-color: blue;">3</div>
+        <div style="background-color: pink;">4</div>
+        <div style="background-color: yellow;">5</div>
+        <div style="background-color: cyan;">6</div>
+        <div style="background-color: orange;">7</div>
+        <div style="background-color: purple;">8</div>
+        <div style="background-color: violet;">9</div>
+    </div>
+
+    <h1>Grid Gap Columns</h1>
+    <div class="grid-two">
+        <div style="background-color: red;">1</div>
+        <div style="background-color: green;">2</div>
+        <div style="background-color: blue;">3</div>
+        <div style="background-color: pink;">4</div>
+        <div style="background-color: yellow;">5</div>
+        <div style="background-color: cyan;">6</div>
+        <div style="background-color: orange;">7</div>
+        <div style="background-color: purple;">8</div>
+        <div style="background-color: violet;">9</div>
+    </div>
+
+    <h1>Grid Gap Rows</h1>
+    <div class="grid-three">
+        <div style="background-color: red;">1</div>
+        <div style="background-color: green;">2</div>
+        <div style="background-color: blue;">3</div>
+        <div style="background-color: pink;">4</div>
+        <div style="background-color: yellow;">5</div>
+        <div style="background-color: cyan;">6</div>
+        <div style="background-color: orange;">7</div>
+        <div style="background-color: purple;">8</div>
+        <div style="background-color: violet;">9</div>
+    </div>
+
+    <h1>Grid Gap</h1>
+    <div class="grid-four">
+        <div style="background-color: red;">1</div>
+        <div style="background-color: green;">2</div>
+        <div style="background-color: blue;">3</div>
+        <div style="background-color: pink;">4</div>
+        <div style="background-color: yellow;">5</div>
+        <div style="background-color: cyan;">6</div>
+        <div style="background-color: orange;">7</div>
+        <div style="background-color: purple;">8</div>
+        <div style="background-color: violet;">9</div>
+    </div>
+
+    <h1>Column Span</h1>
+    <div class="grid-5">
+        <div style="background-color: red;">1</div>
+        <div style="background-color: green;">2</div>
+        <div style="background-color: blue;">3</div>
+        <div style="background-color: pink;">4</div>
+        <div style="background-color: yellow;">5</div>
+        <div style="background-color: cyan;">6</div>
+        <div style="background-color: orange;">7</div>
+        <div style="background-color: purple;">8</div>
+        <div style="background-color: violet;">9</div>
+    </div>
+    
+
+    <h1>Row Span</h1>
+    <div class="grid-6">
+        <div style="background-color: red;">1</div>
+        <div style="background-color: green;">2</div>
+        <div style="background-color: blue;">3</div>
+        <div style="background-color: pink;">4</div>
+        <div style="background-color: yellow;">5</div>
+        <div style="background-color: cyan;">6</div>
+        <div style="background-color: orange;">7</div>
+        <div style="background-color: purple;">8</div>
+        <div style="background-color: violet;">9</div>
+    </div>
+</body>
+</html>

@@ -55,7 +55,7 @@
     font-size: 18px;
     line-height: 1.9;
 }
-.carousel-caption p, a{
+.carousel-caption p, .carousel-caption a{
     animation: moveleft 1s linear 1;
     animation-delay: 2s;
     visibility: hidden;

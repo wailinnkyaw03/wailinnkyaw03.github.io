@@ -84,7 +84,16 @@
 /* h3{
     text-transform: uppercase;
 } */
-.project{
+#project{
+    background-color: rgb(25, 24, 24);
+    color:#fff;
+    width: 100%;
+    height: auto;
+}
+.card{
+    margin: auto;
+}
+.service{
     margin: auto;
 }
 a{

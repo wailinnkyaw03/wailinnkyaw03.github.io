@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/b829c5162c.js" crossorigin="anonymous"></script>
     <link rel="icon" href="Profile Picture.jpg">
 </head>
-<body>  
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">  
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#home"><img class="rounded-circle" src="Profile Picture.jpg" width="50px" alt=""></a>
@@ -30,7 +30,7 @@
                 <a class="nav-link" href="#skill">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#project">Porfolio</a>
+                <a class="nav-link" href="#project">Portfolio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
@@ -141,11 +141,62 @@
   
   <!-- porfolio -->
   <div class="web text-center p-5 bg-dark text-white" id="project">
-    <h3 class="mb-5">Porfolio</h3>
-    <h5 class=""></h5>
-    <div class="project">
-      <a class="btn-success p-3" style="text-decoration: none; border-radius:10px;" href="http://wlktech1.pythonanywhere.com" target="_blank">Student Enrolled System</a><br><br><br>
-      <a class="btn-success p-3" style="text-decoration: none; border-radius:10px;" href="https://wlktech.github.io/engCal/" target="_blank">Engineering Calculator</a>
+    <h3 class="mb-5">Portfolio</h3>
+    <div class="project container row mt-4" align="center">
+      <h4 class="text-center mb-5">Web Applications</h4>
+      <div class="col p-2">
+        <div class="card" style="width:300px">
+          <img class="card-img-top" src="https://sccnhub.com/images/Online-Student-Registration.png" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title text-dark text-center">Student Registration Management</h4>
+            <p class="card-text text-dark text-center">Student Enroll System by Data Management System</p>
+            <div class="button">
+              <button class="btn btn-dark"><a class="text-white" href="http://wlktech1.pythonanywhere.com/" target="_blank">Get App</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col p-2">
+        <div class="card" style="width:300px">
+          <img class="card-img-top" src="https://thumbs.dreamstime.com/b/engineer-tool-icon-profession-design-cartoon-architect-civil-construction-yellow-hard-hat-architectural-drawing-91635084.jpg" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title text-dark text-center">Engineering Online Calculator</h4>
+            <p class="card-text text-dark text-center">Area, Volume, Materials, and Unit Conversion</p>
+            <div class="button">
+              <button class="btn btn-dark"><a class="text-white" href="https://wlktech.github.io/engCal/" target="_blank">Get App</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project container row mt-4">
+        <h4 class="text-center mb-5 mt-4">Web Designs</h4>
+        <div class="col p-2" align="center">
+          <div class="card" style="width:300px">
+            <img class="card-img-top" src="https://wlktech.github.io/nr/logo.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title text-dark text-center">NR-Noise Reducer</h4>
+              <p class="card-text text-dark text-center">Acoustic Foam Selling Website</p>
+              <div class="button">
+                <button class="btn btn-dark"><a class="text-white" href="https://wlktech.github.io/nr/" target="_blank">See More</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col p-2" align="center">
+          <div class="card" style="width:300px">
+            <img class="card-img-top" src="logo.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title text-dark text-center">WLK-TECH</h4>
+              <p class="card-text text-dark text-center">Web Designs & Developments</p>
+              <div class="button">
+                <button class="btn btn-dark"><a class="text-white" href="https://wlktech.github.io/nr/" target="_blank">See More</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
   

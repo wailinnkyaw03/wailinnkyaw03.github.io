@@ -2,6 +2,9 @@
     background-color: rgb(50, 50, 50);
     opacity: 70%;
 }
+.nav-link{
+    margin-right: 10px;
+}
 .navbar:hover{
     opacity: 100%;
     color: white;
@@ -13,17 +16,59 @@
     color:white;
 }
 .carousel-item{
-    height:auto;
-    background:no-repeat scroll center scroll;
+    height:100vh;
+    min-height: 300px;
+    /* background:no-repeat scroll center scroll;
     -webkit-backgrund-size:cover;
-    background-size: cover;
+    background-size: cover; */
 }
 .carousel-caption{
-    margin: auto;
+    /* position: absolute; */
+    bottom: 220px;
 }
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-caption a{
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+}
+.w-100{
+    height: 100vh;
+}
+/* .navbar-toggler{
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+} */
+@media only screen and (max-width:767px){
+
+    .carousel-caption{
+        bottom: 150px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption p{
+        font-size: 13px;
+    }
+    .carousel-caption a{
+        margin-top: 10px;
+    }
+}
+
 .carousel-item::before{
     content:"";
-    display: block;
     position: absolute;
     top: 0;
     left: 0;
@@ -32,17 +77,6 @@
     background: #000;
     opacity: 0.7;
 }
-.slider-btn{
-    margin-top: 30px;
-}
-.slider-btn .btn{
-    background-color: red;
-    color: white;
-    border-radius: 0;
-    font-size: 1rem;
-    margin-right: 15px;
-}
-.slider-btn .btn-2{
-    color: #000;
-    background-color: #fff;
+.social-media a{
+    margin: 2px;
 }

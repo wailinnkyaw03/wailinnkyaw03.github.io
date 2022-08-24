@@ -54,13 +54,13 @@
 @media only screen and (max-width:767px){
 
     .carousel-caption{
-        bottom: 200px;
+        bottom: 250px;
     }
     .carousel-caption h5{
         font-size: 17px;
     }
     .carousel-caption p{
-        font-size: 13px;
+        font-size: 14px;
     }
     .carousel-caption a{
         margin-top: 10px;

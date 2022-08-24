@@ -1,0 +1,48 @@
+.navbar{
+    background-color: rgb(50, 50, 50);
+    opacity: 70%;
+}
+.navbar:hover{
+    opacity: 100%;
+    color: white;
+}
+.navbar a{
+    color:#fff;
+}
+.navbar a:hover{
+    color:white;
+}
+.carousel-item{
+    height:auto;
+    background:no-repeat scroll center scroll;
+    -webkit-backgrund-size:cover;
+    background-size: cover;
+}
+.carousel-caption{
+    margin: auto;
+}
+.carousel-item::before{
+    content:"";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right:0;
+    background: #000;
+    opacity: 0.7;
+}
+.slider-btn{
+    margin-top: 30px;
+}
+.slider-btn .btn{
+    background-color: red;
+    color: white;
+    border-radius: 0;
+    font-size: 1rem;
+    margin-right: 15px;
+}
+.slider-btn .btn-2{
+    color: #000;
+    background-color: #fff;
+}

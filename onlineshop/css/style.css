@@ -114,3 +114,18 @@ small{
     color: red;
     text-decoration: line-through;    
 }
+.about{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-image: url(../images/red-374318_1920.jpg);
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+
+}
+.about div{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: white;
+
+}

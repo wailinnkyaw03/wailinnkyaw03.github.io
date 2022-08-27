@@ -5,7 +5,7 @@
 
 .brand-name{
     position: relative;
-    right: 25px;
+    right: 18px;
     font-family: lobster;
 }
 .nav-item{
@@ -13,6 +13,17 @@
 }
 .nav-link{
     text-transform: uppercase;
+}
+.nav-link i{
+    font-size: 25px;
+}
+.count{
+    position: relative;
+    top: -20px;
+    background-color: gray;
+    color: white;
+    padding: 0 4px 0 4px;
+    border-radius: 50%;
 }
 #home{
     margin-top: 50px;

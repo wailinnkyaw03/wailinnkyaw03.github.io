@@ -36,18 +36,58 @@
     margin-top: 80px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 50px;
 }
 .banner_text h1{
     font-family: lobster;
     margin-bottom: 20px;
+    animation: moveright 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes moveright{
+    0%{
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform:translateX(0);
+        visibility: visible;
+    }
 }
 .banner_text p{
     text-align: justify;
+    animation: zoomin 1s linear 1;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.img{
+    animation: zoomin 1s linear 1;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes zoomin{
+    0%{
+        transform: scale(0.5);
+        visibility: visible;
+    }
+    100%{
+        transform: scale(1);
+        visibility: visible;
+    }
+
 }
 
 .shop{
     border: 1px solid darkcyan;
     margin-top: 10px;
+    animation: moveright 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
 }
 .shop a{
     text-decoration: none;
@@ -140,4 +180,11 @@ footer p{
     color: gray;
     font-size: 30px;
     margin: 30px;
+}
+.story{
+    margin-top: 100px;
+}
+
+.about-img img{
+    border-radius: 20px;
 }

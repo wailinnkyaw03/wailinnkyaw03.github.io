@@ -1,7 +1,11 @@
+*{
+    font-family: time;
+}
 @font-face {
     font-family: lobster;
     src: url(../font/Lobster-Regular.ttf);
 }
+
 
 .brand-name{
     position: relative;
@@ -187,4 +191,5 @@ footer p{
 
 .about-img img{
     border-radius: 20px;
+    box-shadow: 2px 3px 4px #000;
 }

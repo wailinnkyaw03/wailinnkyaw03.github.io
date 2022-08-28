@@ -1,5 +1,5 @@
 *{
-    font-family: time;
+    font-family:Time ;
 }
 @font-face {
     font-family: lobster;
@@ -192,4 +192,29 @@ footer p{
 .about-img img{
     border-radius: 20px;
     box-shadow: 2px 3px 4px #000;
+}
+.material{
+    margin-top: 110px;
+}
+.material1{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.material h3{
+    font-family: lobster;
+    color: rgb(255, 5, 47);
+    text-shadow: 2px 3px 4px gray;
+}
+.product_card1{
+    background-color: rgb(178, 159, 255);
+    padding: 40px;
+}
+.product_card2{
+    background-color: rgb(252, 174, 122);
+    padding: 40px;
+}
+
+.product_card3{
+    background-color: rgb(236, 147, 245);
+    padding: 40px;
 }

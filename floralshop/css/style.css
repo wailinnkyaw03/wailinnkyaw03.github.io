@@ -110,7 +110,7 @@
     margin: auto;
 }
 .underline2{
-    width: 400px;
+    width: 100%;
 }
 .cart{
     background-color: rgb(234, 234, 234);
@@ -264,7 +264,7 @@ footer p{
 
 }
 .address{
-    width: auto;
+    width: 100%;
     height: auto;
     background-color: rgb(126, 63, 3);
     margin-top: 40px;

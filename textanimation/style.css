@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppin', sans-serif;
+}
+.text_animated{
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center;
+    min-height: 100vh; */
+    /* background: #343F4F; */
+    text-align: left;
+    margin-top: 100px;
+}
+.wrapper{
+    display: inline-flex;
+}
+.text_animated{
+    text-align: center;
+}
+.text_animated span{
+    display: block;
+    font-size: 40px;
+    font-weight: 400;
+
+}
+.wrapper .static_txt{
+    color: #000;
+    font-size: 60px;
+    font-weight: 400;
+}
+.wrapper .dynamic_txt{
+    margin-left: 5px;
+    margin-top: 10px;
+    height: 70px;
+    line-height: 70px;
+    /* background: red; */
+    overflow: hidden;
+}
+.dynamic_txt li{
+    color: #FC6D6D;
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 8s steps(4) infinite;
+}
+@keyframes slide{
+    100%{
+        top: -280px;
+    }
+}
+.dynamic_txt li span{
+    position: relative;
+}
+.dynamic_txt li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 2s steps(10) infinite;
+    
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+.img{
+    margin-top: 100px;
+}
+.buttom{
+    margin-top: 20px;
+}
+.hire{
+    border: 1px solid rgb(255, 67, 67);
+    margin-right: 10px;
+}
+@media only screen and (max-width:1160px){
+    .text_animated{
+        text-align: center;
+    }
+    .buttom{
+        text-align: center;
+    }
+}
+@media only screen and (max-width:506px){
+    .text_animated span{
+        font-size: 25px;
+    }
+    .wrapper .static_txt{
+        font-size: 25px;
+        margin-top:28px;
+    }
+    .dynamic_txt{
+        font-size: 25px;
+    }
+    .buttom{
+        text-align: center;
+    }
+}

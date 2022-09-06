@@ -10,5 +10,5 @@ for i in range(500):
 
 for x in range(500):
     fd(x*5/5+4)
-    lt(360/5+1)
+    lt(360/5+1)0
 done()

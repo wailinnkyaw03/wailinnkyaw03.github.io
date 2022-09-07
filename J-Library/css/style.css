@@ -162,7 +162,7 @@
     }
     .home, .slider-btn{
         position: relative;
-        top: -50px;
+        top: 50px;
     }
 }
 
@@ -267,4 +267,7 @@ form div label{
 }
 #comment{
     height: 150px;
+}
+.icon i{
+    color: rgb(13, 114, 13);
 }

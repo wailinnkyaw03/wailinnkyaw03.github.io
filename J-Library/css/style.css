@@ -243,3 +243,7 @@
 .line{
     line-height: 100%;
 }
+.table th,td{
+    font-family: 'Times New Roman', Times, serif;
+
+}

@@ -271,3 +271,7 @@ form div label{
 .icon i{
     color: rgb(13, 114, 13);
 }
+.con1, .con2{
+    margin: auto;
+    margin-bottom: 30px;
+}

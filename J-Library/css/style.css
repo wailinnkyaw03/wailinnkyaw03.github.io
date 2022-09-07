@@ -275,3 +275,6 @@ form div label{
     margin: auto;
     margin-bottom: 30px;
 }
+.audio a{
+    margin: 10px;
+}

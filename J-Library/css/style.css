@@ -259,3 +259,12 @@
     font-family: 'Times New Roman', Times, serif;
 
 }
+.contact{
+    margin-top: 100px;
+}
+form div label{
+    font-family: 'Times New Roman', Times, serif;
+}
+#comment{
+    height: 150px;
+}

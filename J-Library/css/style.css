@@ -281,3 +281,17 @@ form div label{
 .question{
     margin-top: 150px;
 }
+.level-card{
+    width: 100%;
+    background-color: beige;
+    padding: 30px;
+    box-shadow: 2px 3px 4px grey;
+    transition: 1s;
+}
+.level-card a{
+    text-decoration: none;
+}
+.level-card:hover{
+    transform: scale(1.1);
+
+}

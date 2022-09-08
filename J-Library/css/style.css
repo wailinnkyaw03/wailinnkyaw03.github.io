@@ -176,6 +176,16 @@
     }
 }
 
+@media only screen and (max-width:336px){
+    .home img{
+        width: 50px;
+    }
+    .home, .slider-btn{
+        position: relative;
+        top: 190px;
+    }
+}
+
 @media only screen and (max-width:280px){
     .home h1{
         font-size: 15px;
@@ -281,17 +291,21 @@ form div label{
 .question{
     margin-top: 150px;
 }
+.j-level{
+    margin: auto;
+    text-align: center;
+}
 .level-card{
     width: 100%;
     background-color: beige;
     padding: 30px;
     box-shadow: 2px 3px 4px grey;
     transition: 1s;
+    margin: 15px;
 }
 .level-card a{
     text-decoration: none;
 }
 .level-card:hover{
     transform: scale(1.1);
-
 }

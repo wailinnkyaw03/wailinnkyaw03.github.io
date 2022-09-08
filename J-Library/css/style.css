@@ -291,21 +291,20 @@ form div label{
 .question{
     margin-top: 150px;
 }
-.j-level{
-    text-align: center;
-    margin-bottom: 50px;
-}
+
 .level-card{
     width: 100%;
     background-color: beige;
     padding: 30px;
-    margin: 15px;
+    border-radius: 10px;
     box-shadow: 2px 3px 4px grey;
     transition: 1s;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .level-card a{
     text-decoration: none;
 }
 .level-card:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }

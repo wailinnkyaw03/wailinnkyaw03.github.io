@@ -292,16 +292,16 @@ form div label{
     margin-top: 150px;
 }
 .j-level{
-    margin: auto;
-    
+    text-align: center;
+    margin-bottom: 50px;
 }
 .level-card{
     width: 100%;
     background-color: beige;
     padding: 30px;
+    margin: 15px;
     box-shadow: 2px 3px 4px grey;
     transition: 1s;
-    margin: 15px;
 }
 .level-card a{
     text-decoration: none;

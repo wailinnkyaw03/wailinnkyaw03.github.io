@@ -2,10 +2,64 @@
     background-color: rgb(192, 252, 180);
     width: 100%;
     height: auto;
-    padding-top: 100px;
+    padding-top: 130px;
     padding-bottom: 70px;
 }
+.home h1{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.consultName1{
+    animation: moveright 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
 
+}
+@keyframes moveright{
+    0%{
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform:translateX(0);
+        visibility: visible;
+    }
+}
+.consultName2, .button{
+    animation: moveleft 1s linear 1;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+
+}
+@keyframes moveleft{
+    0%{
+        transform: translateX(100px);
+        visibility: visible;
+    }
+    100%{
+        transform:translateX(0);
+        visibility: visible;
+    }
+}
+.home img{
+    animation: zoomin 1s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes zoomin{
+    0%{
+        transform: scale(0.5);
+        visibility: visible;
+    }
+    100%{
+        transform: scale(1);
+        visibility: visible;
+    }
+
+}
 footer{
     margin-top: 100px;
 }
+

@@ -1,3 +1,11 @@
+.home{
+    background-color: rgb(192, 252, 180);
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
 footer{
     margin-top: 100px;
 }

@@ -130,9 +130,6 @@ i{
 }
 
 /* slick */
-/* .responsive{
-    margin-top:150px;
-} */
 .left_arrow{
     position: absolute;
     z-index: 1;
@@ -158,16 +155,28 @@ i{
     cursor: pointer;
 }
 
-.slick-dots li button{
-    width: 20px;
-    background-color: rgb(117, 117, 117);
-    border-radius: 50%;
-    opacity: 0.3;
+.carousel-caption{
+    width: 100%;
+    height: 30%;
+    border-radius: 10px;
+    position: absolute;
+    top: 30%;
+    bottom: 50%;
+    left: 0%;
+    color: #fff;
 }
-.slick-dots li button:hover{
-    opacity: 1;
+.home-text{
+    background-color: rgba(0, 0, 0, 0.3);
+
 }
-.color{
-    font-size: 12px;
+.btn-gold{
+    background-color: #AD8E3D;
+    color: #fff;
+}
+.btn-gold:hover{
+    background-color: black;
+    color: #AD8E3D;
+    transition-duration: .6s;
 }
 /* slick */
+

@@ -317,3 +317,20 @@ i{
     font-family: 'Poppins', sans-serif;
 }
 /* Intro End */
+
+/* Bedroom start */
+.bedroom{
+    position: relative;
+}
+.text-box{
+    background-color: #AD8E3D;
+    color: #fff;
+    width: 500px;
+    height:auto;
+    padding: 100px 50px;
+    border-radius: 0px;
+    position: absolute;
+    top: -30px;
+    right: 50px;
+}
+/* Bedroom end */

@@ -3,6 +3,13 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
+body {
+    background-image: url("../img/back1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
 .navbar-line{
     border-bottom: 1px solid #AD8E3D;
 }
@@ -180,6 +187,7 @@ i{
 }
 /* slick */
 /* Booking */
+
 ::-webkit-calendar-picker-indicator { 
     color: #AD8E3D; 
 }

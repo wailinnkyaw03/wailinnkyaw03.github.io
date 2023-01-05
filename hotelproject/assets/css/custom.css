@@ -320,9 +320,23 @@ i{
 
 /* Bedroom start */
 .bedroom{
-    position: relative;
+    background-image: url(../img/hotelbedroom.jpg);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px;
+    overflow: hidden;
 }
 .text-box{
+    background-color: #AD8E3D;
+    color: #fff;
+    width: 500px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: 100px;
+}
+/* .text-box{
     background-color: #AD8E3D;
     color: #fff;
     width: 500px;
@@ -332,5 +346,13 @@ i{
     position: absolute;
     top: -30px;
     right: 50px;
+    bottom: -30px;
 }
+@media (max-width: 414px) {
+    .text-box{
+        position: absolute;
+        left: 2%;
+        width: 350px;
+    }
+} */
 /* Bedroom end */

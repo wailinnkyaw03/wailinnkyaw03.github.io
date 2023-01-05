@@ -256,13 +256,45 @@
 
 <!-- Booking Start -->
 <form action="">
-    <div class="row">
-        <div class="col-6">
-            <div>
-                <label class="form-label" for="checkIn">CHECK IN</label>
+    <div class="container bg-dark p-3 px-5 goldText rounded shadow-lg">
+        <div class="row">
+            <div class="col-6 col-lg-3 my-3">
+                <div>
+                    <label class="form-label" for="checkIn">CHECK IN</label>
+                </div>
+                <div>
+                    <input class="form-control" type="date" name="checkIn" id="checkIn" value="2017-06-01">
+                </div>
             </div>
-            <div>
-                <input class="form-control" type="date" name="checkIn" id="checkIn" value="2023-01-05">
+            <div class="col-6 col-lg-3 my-3">
+                <div>
+                    <label class="form-label" for="checkOut">CHECK OUT</label>
+                </div>
+                <div>
+                    <input class="form-control" type="date" name="checkOut" id="checkOut" value="2017-06-01">
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 my-3">
+                
+                <div class="booking-form__input guests-input">
+                    <label for="guests-input-btn" class="form-label">ROOMS & GUESTS</label>
+                    <button name="guests-btn" id="guests-input-btn">1 guest</button>
+                    <div class="guests-input__options" id="guests-input-options">
+                        <div>
+                            <span class="guests-input__ctrl minus" id="adults-subs-btn">-</span><!-- /.guests-input__ctrl -->
+                            <span class="guests-input__value"><span id="guests-count-adults">1</span>Adults</span><!-- /.guests-input__value -->
+                            <span class="guests-input__ctrl plus" id="adults-add-btn">+</span><!-- /.guests-input__ctrl -->
+                        </div>
+                        <div>
+                            <span class="guests-input__ctrl minus" id="children-subs-btn">-</span><!-- /.guests-input__ctrl -->
+                            <span class="guests-input__value"><span id="guests-count-children">0</span>Children</span><!-- /.guests-input__value -->
+                            <span class="guests-input__ctrl plus" id="children-add-btn">+</span><!-- /.guests-input__ctrl -->
+                        </div>
+                    </div><!-- /.guests-input__options -->
+                </div><!-- /.booking-form__input -->
+            </div>
+            <div class="col-lg-3 col-6">
+                <button class="btn btn-gold mt-5">BOOK NOW</button>
             </div>
         </div>
     </div>

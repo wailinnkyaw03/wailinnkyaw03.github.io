@@ -255,7 +255,7 @@
 <!-- home end -->
 
 <!-- Booking Start -->
-<div class="booking my-5">
+<div class="booking my-5 zoomin">
     <form action="">
         <div class="container bg-dark p-3 px-5 goldText rounded shadow-lg">
             <div class="row">
@@ -304,19 +304,19 @@
 <!-- Booking End -->
 
 <!-- Intro start-->
-<div class="container-fluid bg-light py-5">
+<div class="container-fluid bg-light py-5" id="about">
     <div class="container">
         <div class="row">
-            <div class="col-xl-6 my-4">
+            <div class="col-xl-6 my-4 leftin">
                 <img src="./assets/img/back1.jpg" class="w-100 rounded shadow" alt="">
             </div>
-            <div class="col-xl-6 my-4">
+            <div class="col-xl-6 my-4 rightin">
                 <hr class="underline">
                 <p class="flip-font text-secondary">Stay & Enjoy The View of Bagan Tradition</p>
                 <h4 class="my-4">WELCOME TO ROYAL PALACE HOTEL (BAGAN)</h4>
                 <p align="justify" class="intro-para">Discover the mystique of the central plains in the cultural heartland of Myanmar. Explore the region’s artistic and historical heritage from the new Royal Palace Hotel Bagan.</p>
                 <p align="justify" class="intro-para">Traditional wooden rice barns and restored palace-like structures at the 116-key resort pay homage to the area’s rich heritage as capital of an ancient kingdom, while sophisticated amenities and intuitive service set a new benchmark for the region.</p>
-                <button class="btn btn-gold mt-3">Read More</button>
+                <!-- <button class="btn btn-gold mt-3">Read More</button> -->
             </div>
         </div>
     </div>
@@ -324,9 +324,9 @@
 <!-- Intro end-->
 
 <!-- Hotel Bedroom start -->
-<div class="bedroom my-5">
+<div class="bedroom my-5" style="overflow: hidden;">
     <!-- <img src="./assets/img/hotelbedroom.jpg" class="w-100" style="height: 500px;" alt=""> -->
-    <div class="text-box">
+    <div class="text-box rightin">
         <p class="flip-font">Our Designer Accomodations</p>
         <h4 class="my-4">
             DELUXE 
@@ -344,18 +344,22 @@
 
 <!-- Bagan in places start -->
 <div class="container-fluid bg-light py-5 my-5">
-    <div class="container">
+    <div class="container zoomin">
         <h3>Places in Bagan City</h3>
         <div class="row my-4">
             <div class="col-md-3 my-3">
-                <img src="./assets/img/Shwesandaw-Pagoda.jpg" class="w-100" alt="">
+                <div class="visit">
+                    <img src="./assets/img/Shwesandaw-Pagoda.jpg" class="w-100 popout" alt="">
+                </div>
             </div>
             <div class="col-md-3 my-3">
                 <p class="placesInBagan"><i class="fa-solid fa-map-location-dot me-2"></i>Shwesandaw Pagoda</p>
                 <p class="add-read-more show-less-content" align="justify">Shwesandaw Pagoda is very crowded at sunrise because it’s a great place to take advantage of the view over the surrounding temples. But just a few hours later, the crowds dissipate and you can take your time climbing the steep steps. It’s said to be one of the first pagodas built by Anawrahta, the father of the Burmese nation, and was built in 1057. Situated outside of the city walls and along with four other pagodas, it provides spiritual protection for Bagan.</p>
             </div>
             <div class="col-md-3 my-3">
-                <img src="./assets/img/thatbinnyutemple.jpg" class="w-100" alt="">
+                <div class="visit">
+                    <img src="./assets/img/thatbinnyutemple.jpg" class="w-100 popout" alt="">
+                </div>
             </div>
             <div class="col-md-3 my-3">
                 <p class="placesInBagan"><i class="fa-solid fa-map-location-dot me-2"></i>Thatbyinnyu Temple</p>
@@ -366,14 +370,18 @@
                 <p class="add-read-more show-less-content" align="justify">Built in 1091, Ananda Temple was fully restored after an earthquake in 1975. The spires were guilded in 1990 for the 900th anniversary of the temple. Entering the temple is like entering Disney World though. The location is convenient for the bus tours (what happened or horse and cart or bike as the only means of transportation in Bagan?) to unload and a market is also set up. Once you bypass all of that though, the courtyard is an extremely peaceful place to sit and admire the temple’s exterior.</p>
             </div>
             <div class="col-md-3 my-3">
-                <img src="./assets/img/anandapagoda.jpg" class="w-100" alt="">
+                <div class="visit">
+                    <img src="./assets/img/anandapagoda.jpg" class="w-100 popout" alt="">
+                </div>
             </div>
             <div class="col-md-3 my-3">
                 <p class="placesInBagan"><i class="fa-solid fa-map-location-dot me-2"></i>Dhammayangyi Temple</p>
                 <p class="add-read-more show-less-content" align="justify">Dhammayangyi Temple was built by the tyrant King Narathu during his three year reign. From a distance, or ballooning above, the temple looks like an Egyptian pyramid and it’s the most massive in size structure in Bagan. Locals refer to it to the haunted temple and think it is haunted with the sins of the ruthless King Narathu who killed his own father, brother, and queen. Others think there are hidden treasures behind the blocked up walls. The temple is also home to the rare double Buddha statues.</p>
             </div>
             <div class="col-md-3 my-3">
-                <img src="./assets/img/dhammayangyi_01.jpg" class="w-100" alt="">
+                <div class="visit">
+                    <img src="./assets/img/dhammayangyi_01.jpg" class="w-100 popout" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -382,10 +390,10 @@
 <!-- Bagan in places end -->
 
 <!-- Exclusive Deal Start -->
-<div class="container-fluid bg-gold py-5 text-white">
+<div class="container-fluid bg-gold py-5 text-white" style="overflow: hidden;">
     <div class="container">
-        <h4>Be the first to know about our exclusive deals</h4>
-        <div class="input-group mb-3">
+        <h4 class="leftin">Be the first to know about our exclusive deals</h4>
+        <div class="input-group mb-3 rightin">
             <input type="text" class="form-control" placeholder="Enter Your Email">
             <button class="btn btn-dark" type="button" id="button-addon2">Subscribe</button>
         </div>      
@@ -393,23 +401,45 @@
 </div>
 <!-- Exclusive Deal End -->
 
+<!-- Popup Chat Window Start-->
+<button class="open-button btn" onclick="openForm()"><i class="fa-brands fa-facebook-messenger"></i></button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<!-- Popup End -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
 <!-- footer start -->
 <footer class="bg-dark goldText pt-5 pb-4">
     <div class="container">
         <div class="row">
-            <div class="col-xl-3">
+            <div class="col-xl-3 my-3">
                 <img class="d-block" src="./assets/img/bagan-logo.png" width="100px" alt="">
                 <h5 class="text-white">ROYAL PALACE</h5>
                 <p>HOTEL & RESORT</p>
+                <p>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter mx-2"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </p>
             </div>
-            <div class="col-xl-3">
+            <div class="col-xl-3 my-3">
                 <h5 class="text-light mb-4">FOODS & DRINK</h5>
                 <p class="text-light">Bagan Traditional Foods</p>
                 <p class="text-light">Western Foods</p>
                 <p class="text-light">Chinese Foods</p>
                 <p class="text-light">Wines & Beers</p>
             </div>
-            <div class="col-xl-3">
+            <div class="col-xl-3 my-3">
                 <h5 class="text-light mb-4">QUICK LINKS</h5>
                 <a href="" class="text-decoration-none text-white d-block mb-2">HOME</a>
                 <a href="" class="text-decoration-none text-white d-block mb-2">ABOUT</a>
@@ -417,15 +447,17 @@
                 <a href="" class="text-decoration-none text-white d-block mb-2">ROOMS</a>
                 <a href="" class="text-decoration-none text-white d-block mb-2">BLOGS</a>
             </div>
-            <div class="col-xl-3">
+            <div class="col-xl-3 my-3">
                 <h5 class="text-light mb-4">CONTACT US</h5>
                 <p class="text-white"><i class="fa-solid fa-phone-volume me-2"></i> +959421023714</p>
                 <p class="text-white"><i class="fa-solid fa-envelope me-2"></i> info@royalpalacehotel.com</p>
-                <p>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter mx-2"></i>
-                    <i class="fa-brands fa-instagram"></i>
+                <p class="text-white">
+                    <i class="fa-solid fa-map-location-dot me-2"></i>
+                    Kyansittha Road, Nyaung Oo 
+                   <span class="divided">Township Mandalay Division,</span>
+                   <span class="divided">Myanmar.</span>
                 </p>
+                
             </div>
         </div>
     </div>
@@ -441,5 +473,58 @@
     <script src="https://kit.fontawesome.com/b829c5162c.js" crossorigin="anonymous"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/count.js"></script>
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".zoomin");
+          
+            for (var i = 0; i < reveals.length; i++) {
+              var windowHeight = window.innerHeight;
+              var elementTop = reveals[i].getBoundingClientRect().top;
+              var elementVisible = 150;
+          
+              if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+              } else {
+                reveals[i].classList.remove("active");
+              }
+            }
+
+            var leftin = document.querySelectorAll(".leftin");
+          
+            for (var i = 0; i < leftin.length; i++) {
+              var windowHeight = window.innerHeight;
+              var elementTop = leftin[i].getBoundingClientRect().top;
+              var elementVisible = 150;
+          
+              if (elementTop < windowHeight - elementVisible) {
+                leftin[i].classList.add("Leftin");
+              } else {
+                leftin[i].classList.remove("Leftin");
+              }
+            }
+          
+
+            var rightin = document.querySelectorAll(".rightin");
+          
+            for (var i = 0; i < rightin.length; i++) {
+              var windowHeight = window.innerHeight;
+              var elementTop = rightin[i].getBoundingClientRect().top;
+              var elementVisible = 150;
+          
+              if (elementTop < windowHeight - elementVisible) {
+                rightin[i].classList.add("Rightin");
+              } else {
+                rightin[i].classList.remove("Rightin");
+              }
+            }
+        }
+          
+          window.addEventListener("scroll", reveal);
+        
+        var loader = document.getElementById('preloader');
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
 </body>
 </html>

@@ -348,14 +348,18 @@
         <h3>Places in Bagan City</h3>
         <div class="row my-4">
             <div class="col-md-3 my-3">
-                <img src="./assets/img/Shwesandaw-Pagoda.jpg" class="w-100" alt="">
+                <div class="visit">
+                    <img src="./assets/img/Shwesandaw-Pagoda.jpg" class="w-100 popout" alt="">
+                </div>
             </div>
             <div class="col-md-3 my-3">
                 <p class="placesInBagan"><i class="fa-solid fa-map-location-dot me-2"></i>Shwesandaw Pagoda</p>
                 <p class="add-read-more show-less-content" align="justify">Shwesandaw Pagoda is very crowded at sunrise because it’s a great place to take advantage of the view over the surrounding temples. But just a few hours later, the crowds dissipate and you can take your time climbing the steep steps. It’s said to be one of the first pagodas built by Anawrahta, the father of the Burmese nation, and was built in 1057. Situated outside of the city walls and along with four other pagodas, it provides spiritual protection for Bagan.</p>
             </div>
             <div class="col-md-3 my-3">
-                <img src="./assets/img/thatbinnyutemple.jpg" class="w-100" alt="">
+                <div class="visit">
+                    <img src="./assets/img/thatbinnyutemple.jpg" class="w-100 popout" alt="">
+                </div>
             </div>
             <div class="col-md-3 my-3">
                 <p class="placesInBagan"><i class="fa-solid fa-map-location-dot me-2"></i>Thatbyinnyu Temple</p>
@@ -366,14 +370,18 @@
                 <p class="add-read-more show-less-content" align="justify">Built in 1091, Ananda Temple was fully restored after an earthquake in 1975. The spires were guilded in 1990 for the 900th anniversary of the temple. Entering the temple is like entering Disney World though. The location is convenient for the bus tours (what happened or horse and cart or bike as the only means of transportation in Bagan?) to unload and a market is also set up. Once you bypass all of that though, the courtyard is an extremely peaceful place to sit and admire the temple’s exterior.</p>
             </div>
             <div class="col-md-3 my-3">
-                <img src="./assets/img/anandapagoda.jpg" class="w-100" alt="">
+                <div class="visit">
+                    <img src="./assets/img/anandapagoda.jpg" class="w-100 popout" alt="">
+                </div>
             </div>
             <div class="col-md-3 my-3">
                 <p class="placesInBagan"><i class="fa-solid fa-map-location-dot me-2"></i>Dhammayangyi Temple</p>
                 <p class="add-read-more show-less-content" align="justify">Dhammayangyi Temple was built by the tyrant King Narathu during his three year reign. From a distance, or ballooning above, the temple looks like an Egyptian pyramid and it’s the most massive in size structure in Bagan. Locals refer to it to the haunted temple and think it is haunted with the sins of the ruthless King Narathu who killed his own father, brother, and queen. Others think there are hidden treasures behind the blocked up walls. The temple is also home to the rare double Buddha statues.</p>
             </div>
             <div class="col-md-3 my-3">
-                <img src="./assets/img/dhammayangyi_01.jpg" class="w-100" alt="">
+                <div class="visit">
+                    <img src="./assets/img/dhammayangyi_01.jpg" class="w-100 popout" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -393,23 +401,45 @@
 </div>
 <!-- Exclusive Deal End -->
 
+<!-- Popup Chat Window Start-->
+<button class="open-button btn" onclick="openForm()"><i class="fa-brands fa-facebook-messenger"></i></button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<!-- Popup End -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
 <!-- footer start -->
 <footer class="bg-dark goldText pt-5 pb-4">
     <div class="container">
         <div class="row">
-            <div class="col-xl-3">
+            <div class="col-xl-3 my-3">
                 <img class="d-block" src="./assets/img/bagan-logo.png" width="100px" alt="">
                 <h5 class="text-white">ROYAL PALACE</h5>
                 <p>HOTEL & RESORT</p>
+                <p>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter mx-2"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </p>
             </div>
-            <div class="col-xl-3">
+            <div class="col-xl-3 my-3">
                 <h5 class="text-light mb-4">FOODS & DRINK</h5>
                 <p class="text-light">Bagan Traditional Foods</p>
                 <p class="text-light">Western Foods</p>
                 <p class="text-light">Chinese Foods</p>
                 <p class="text-light">Wines & Beers</p>
             </div>
-            <div class="col-xl-3">
+            <div class="col-xl-3 my-3">
                 <h5 class="text-light mb-4">QUICK LINKS</h5>
                 <a href="" class="text-decoration-none text-white d-block mb-2">HOME</a>
                 <a href="" class="text-decoration-none text-white d-block mb-2">ABOUT</a>
@@ -417,15 +447,17 @@
                 <a href="" class="text-decoration-none text-white d-block mb-2">ROOMS</a>
                 <a href="" class="text-decoration-none text-white d-block mb-2">BLOGS</a>
             </div>
-            <div class="col-xl-3">
+            <div class="col-xl-3 my-3">
                 <h5 class="text-light mb-4">CONTACT US</h5>
                 <p class="text-white"><i class="fa-solid fa-phone-volume me-2"></i> +959421023714</p>
                 <p class="text-white"><i class="fa-solid fa-envelope me-2"></i> info@royalpalacehotel.com</p>
-                <p>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter mx-2"></i>
-                    <i class="fa-brands fa-instagram"></i>
+                <p class="text-white">
+                    <i class="fa-solid fa-map-location-dot me-2"></i>
+                    Kyansittha Road, Nyaung Oo 
+                   <span class="divided">Township Mandalay Division,</span>
+                   <span class="divided">Myanmar.</span>
                 </p>
+                
             </div>
         </div>
     </div>

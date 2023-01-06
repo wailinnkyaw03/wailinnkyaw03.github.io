@@ -255,7 +255,7 @@
 <!-- home end -->
 
 <!-- Booking Start -->
-<div class="booking my-5">
+<div class="booking my-5 zoomin">
     <form action="">
         <div class="container bg-dark p-3 px-5 goldText rounded shadow-lg">
             <div class="row">
@@ -304,13 +304,13 @@
 <!-- Booking End -->
 
 <!-- Intro start-->
-<div class="container-fluid bg-light py-5">
+<div class="container-fluid bg-light py-5" id="about">
     <div class="container">
         <div class="row">
-            <div class="col-xl-6 my-4">
+            <div class="col-xl-6 my-4 leftin">
                 <img src="./assets/img/back1.jpg" class="w-100 rounded shadow" alt="">
             </div>
-            <div class="col-xl-6 my-4">
+            <div class="col-xl-6 my-4 rightin">
                 <hr class="underline">
                 <p class="flip-font text-secondary">Stay & Enjoy The View of Bagan Tradition</p>
                 <h4 class="my-4">WELCOME TO ROYAL PALACE HOTEL (BAGAN)</h4>
@@ -324,9 +324,9 @@
 <!-- Intro end-->
 
 <!-- Hotel Bedroom start -->
-<div class="bedroom my-5">
+<div class="bedroom my-5" style="overflow: hidden;">
     <!-- <img src="./assets/img/hotelbedroom.jpg" class="w-100" style="height: 500px;" alt=""> -->
-    <div class="text-box">
+    <div class="text-box rightin">
         <p class="flip-font">Our Designer Accomodations</p>
         <h4 class="my-4">
             DELUXE 
@@ -344,7 +344,7 @@
 
 <!-- Bagan in places start -->
 <div class="container-fluid bg-light py-5 my-5">
-    <div class="container">
+    <div class="container zoomin">
         <h3>Places in Bagan City</h3>
         <div class="row my-4">
             <div class="col-md-3 my-3">
@@ -390,10 +390,10 @@
 <!-- Bagan in places end -->
 
 <!-- Exclusive Deal Start -->
-<div class="container-fluid bg-gold py-5 text-white">
+<div class="container-fluid bg-gold py-5 text-white" style="overflow: hidden;">
     <div class="container">
-        <h4>Be the first to know about our exclusive deals</h4>
-        <div class="input-group mb-3">
+        <h4 class="leftin">Be the first to know about our exclusive deals</h4>
+        <div class="input-group mb-3 rightin">
             <input type="text" class="form-control" placeholder="Enter Your Email">
             <button class="btn btn-dark" type="button" id="button-addon2">Subscribe</button>
         </div>      
@@ -473,5 +473,58 @@
     <script src="https://kit.fontawesome.com/b829c5162c.js" crossorigin="anonymous"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/count.js"></script>
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".zoomin");
+          
+            for (var i = 0; i < reveals.length; i++) {
+              var windowHeight = window.innerHeight;
+              var elementTop = reveals[i].getBoundingClientRect().top;
+              var elementVisible = 150;
+          
+              if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+              } else {
+                reveals[i].classList.remove("active");
+              }
+            }
+
+            var leftin = document.querySelectorAll(".leftin");
+          
+            for (var i = 0; i < leftin.length; i++) {
+              var windowHeight = window.innerHeight;
+              var elementTop = leftin[i].getBoundingClientRect().top;
+              var elementVisible = 150;
+          
+              if (elementTop < windowHeight - elementVisible) {
+                leftin[i].classList.add("Leftin");
+              } else {
+                leftin[i].classList.remove("Leftin");
+              }
+            }
+          
+
+            var rightin = document.querySelectorAll(".rightin");
+          
+            for (var i = 0; i < rightin.length; i++) {
+              var windowHeight = window.innerHeight;
+              var elementTop = rightin[i].getBoundingClientRect().top;
+              var elementVisible = 150;
+          
+              if (elementTop < windowHeight - elementVisible) {
+                rightin[i].classList.add("Rightin");
+              } else {
+                rightin[i].classList.remove("Rightin");
+              }
+            }
+        }
+          
+          window.addEventListener("scroll", reveal);
+        
+        var loader = document.getElementById('preloader');
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
 </body>
 </html>

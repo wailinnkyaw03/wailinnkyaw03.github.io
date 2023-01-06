@@ -4,6 +4,46 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
+.zoomin{
+    position: relative;
+    transform: scale(0);
+    /* transform: translateY(150px); */
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.zoomin.active{
+    transform: scale(1);
+    opacity: 1;
+}
+#about{
+    overflow: hidden;
+}
+.leftin{
+    position: relative;
+    transform: translateX(-500px);
+    /* transform: translateY(150px); */
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.leftin.Leftin{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.rightin{
+    position: relative;
+    transform: translateX(500px);
+    /* transform: translateY(150px); */
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.rightin.Rightin{
+    transform: translateX(0);
+    opacity: 1;
+}
 body {
     background-image: url("../img/back1.jpg");
     background-repeat: no-repeat;
@@ -422,7 +462,7 @@ i{
   /* width: 280px; */
 }
 .fa-facebook-messenger{
-    color:rgba(0, 0, 0, 0.5);
+    color:rgb(133, 133, 133);
 }
 /* The popup chat - hidden by default */
 .chat-popup {

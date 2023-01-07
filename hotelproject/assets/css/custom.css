@@ -553,3 +553,11 @@ i{
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+.booking{
+    margin-top: 50px;
+}
+.backColor{
+    background-color: #cacaca;
+    padding: 20px 50px;
+}

@@ -11,7 +11,36 @@
     opacity: 0;
     transition: 1s all ease;
 }
-  
+.closeBtn{
+    position: absolute;
+    right: -20px;
+    top: -10px;
+    background-color: #AD8E3D;
+    opacity: 1;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+.closeBtn:hover{
+    background-color: #AD8E3D;
+    opacity: 1;
+}
+.btn-lightgold{
+    background-color: white;
+    color: #AD8E3D;
+}
+.btn-lightgold:hover{
+    background-color: #AD8E3D;
+    color: white;
+    /* transition-duration: .6s; */
+}
+.div{
+    border: 1px solid black;
+
+} 
+.bg-modal{
+    background-color: rgba(0, 0, 0, 0.1);
+}
 .zoomin.active{
     transform: scale(1);
     opacity: 1;

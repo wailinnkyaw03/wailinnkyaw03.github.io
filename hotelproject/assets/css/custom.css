@@ -215,7 +215,7 @@ i{
 .left_arrow{
     position: absolute;
     z-index: 1;
-    top: 50%;
+    top: 40%;
     padding: 10px;
     border-radius: 50%;
     color: #AD8E3D;
@@ -228,7 +228,7 @@ i{
 .right_arrow{
     position: absolute;
     z-index: 1;
-    top: 50%;
+    top: 40%;
     right: 0px;
     padding: 10px;
     border-radius: 50%;
@@ -560,4 +560,39 @@ i{
 .backColor{
     background-color: #cacaca;
     padding: 20px 50px;
+}
+
+/* about.html */
+.about{
+    margin-top: 160px;
+}
+.line1{
+    width: 200px;
+    border: 3px solid #AD8E3D;
+    border-radius: 5px;
+}
+.review-box{
+    width: 250px;
+    height: 250px;
+    padding: 20px 20px;
+    background-color: #d6d6d6;
+    position: relative;
+    border: 2px solid #AD8E3D;
+    margin: 2px 10px;
+}
+.review-name{
+    position: absolute;
+    bottom: 20px;
+}
+.checked{
+    color: #AD8E3D;
+}
+.starview{
+    font-size: 50px;
+    font-weight: 700;
+}
+.starword{
+    font-size: 18px;
+    color: #000;
+    font-weight: 100;
 }

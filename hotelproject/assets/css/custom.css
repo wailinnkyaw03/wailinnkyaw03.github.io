@@ -73,7 +73,7 @@
     transform: translateX(0);
     opacity: 1;
 }
-body {
+#body {
     background-image: url("../img/back1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -568,7 +568,7 @@ i{
 }
 .line1{
     width: 200px;
-    border: 3px solid #AD8E3D;
+    border: 4px solid #AD8E3D;
     border-radius: 5px;
 }
 .review-box{
@@ -595,4 +595,9 @@ i{
     font-size: 18px;
     color: #000;
     font-weight: 100;
+}
+
+/* room.html */
+#room{
+    margin-top: 250px;
 }

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Palace Hotel</title>
+    <link rel="icon" href="./assets/img/bagan-logo.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+<!-- nav start -->
+<div class="bg-light fixed-top py-0">
+<nav class="navbar text-light bg-dark py-0 d-none d-lg-block" id="home">
+    <div class="container">
+            <div class="subnav">
+                <button class="subnavbtn">
+                    <i class="fa-solid fa-circle-user me-1"></i>
+                    SELECT PROFILE
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="subnav-content">
+                    <div class="container">
+                        <div class="profile-title d-inline-block">
+                            <h3 class="goldText">SELECT YOUR PROFILE</h3>
+                            <p class="text-dark">Pick a profile that suits your visit best.</p>
+                        </div>
+                        <div class="profile-nav ms-auto d-inline-block">
+                            <a class="link" href="#business">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <p>Business Traveller</p> 
+                            </a>
+                            <a class="link" href="#romantic">
+                                <i class="fa-solid fa-champagne-glasses"></i>
+                                <p>Romantic Escape</p>
+                            </a>
+                            <a class="link" href="#family">
+                                <i class="fa-solid fa-people-roof fa-2x"></i>
+                                <p>Family Fun</p>
+                            </a>
+                            <a class="link" href="#group">
+                                <i class="fa-solid fa-people-group"></i>
+                                <p>Group Adventure</p> 
+                            </a>
+                            <a class="link" href="#dining">
+                                <i class="fa-solid fa-bowl-food"></i>
+                                <p>Dining Enthusiast</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <span>
+                Follow Us : 
+                    <a class="text-white" href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a class="text-white" href=""><i class="fa-brands fa-twitter ps-2"></i></a>
+                    <a class="text-white" href=""><i class="fa-brands fa-instagram ps-2"></i></a>
+            </span>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><img src="assets/img/eng.png" width="20px" alt=""> English</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><img src="assets/img/myanmar.jpg" width="20px" alt=""> Myanmar</a></li>
+                </ul>
+            </div>
+    </div>
+</nav>
+<nav class="navbar navbar-line py-0 navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img class="me-2 d-inline-block logo-img" src="assets/img/bagan-logo.png" width="50px" alt="">
+            <span class="logo d-inline-block">
+                <p class="logo-name">ROYAL PALACE</p>
+                <p class="logo-service">HOTELS & RESORTS</p>
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="text-decoration-none text-dark d-block my-3" href="./managebook.html">
+                        <i class="fa-solid fa-list"></i> Manage Booking
+                    </a>
+                </li>
+                <li class="nav-item ms-5">
+                    <a class="text-decoration-none text-dark d-block my-3" href="" data-bs-toggle="modal" data-bs-target="#login">
+                        <i class="fa-solid fa-circle-user"></i> Sign In/Up & Save 10%
+                    </a>
+                </li>
+                <li class="nav-item ms-5">
+                    <a class="btn btn-book" href="#book">
+                        BOOK NOW
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<nav class=" d-none d-lg-block navbar-light shadow-lg">
+    <div class="container">
+        <div>
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="room.html">ROOMS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">BLOGS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>
+<div class="offcanvas offcanvas-end" id="sidebar">
+    <div class="offcanvas-header">
+      <img src="assets/img/bagan-logo.png" class="w-25" alt="">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="container">
+            <a class="text-decoration-none text-dark d-block my-3" href="" data-bs-toggle="modal" data-bs-target="#login">
+                <i class="fa-solid fa-circle-user"></i> Sign In/Up & Save 10%
+            </a>
+            <a class="text-decoration-none text-dark d-block my-3" href="">
+                <i class="fa-solid fa-list"></i> Manage Booking
+            </a>
+            <hr class="line">
+            
+            <a href="index.html" class="text-decoration-none text-dark d-block my-3">HOME</a>
+            <a href="about.html" class="text-decoration-none text-dark d-block my-3">ABOUT</a>
+            <a href="service.html" class="text-decoration-none text-dark d-block my-3">SERVICES</a>
+            <a href="room.html" class="text-decoration-none text-dark d-block my-3">ROOMS</a>
+            <a href="blog.html" class="text-decoration-none text-dark d-block my-3">BLOGS</a>
+            <a href="contact.html" class="text-decoration-none text-dark d-block my-3">CONTACT</a>
+            <hr class="line">
+            <button class="btn btn-dark w-100 text-center my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#profileSelect">
+                <i class="fa-solid fa-circle-user"></i>
+                Select Your Profile
+            </button>
+            <button class="btn btn-dark text-white dropdown w-100">
+                <a class="text-decoration-none text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><img src="assets/img/eng.png" width="20px" alt=""> English</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><img src="assets/img/myanmar.jpg" width="20px" alt=""> Myanmar</a></li>
+                </ul>
+            </button>
+        </div>
+       
+    </div>
+</div>
+<div class="offcanvas offcanvas-end" id="profileSelect">
+    <div class="offcanvas-header">
+        <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+            <i class="fa-solid fa-arrow-left"></i> Back To Menu
+        </button>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="container">
+            <div class="profile-title">
+                <h3 class="goldText">SELECT YOUR PROFILE</h3>
+                <p class="text-dark">Pick a profile that suits your visit best.</p>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <a class="side-link text-decoration-none" href="#business">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <p>Business Traveller</p> 
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a class="side-link text-decoration-none" href="#romantic">
+                        <i class="fa-solid fa-champagne-glasses"></i>
+                        <p>Romantic Escape</p>
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a class="side-link text-decoration-none" href="#family">
+                        <i class="fa-solid fa-people-roof fa-2x"></i>
+                        <p>Family Fun</p>
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a class="side-link text-decoration-none" href="#group">
+                        <i class="fa-solid fa-people-group"></i>
+                        <p>Group Adventure</p> 
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a class="side-link text-decoration-none" href="#dining">
+                        <i class="fa-solid fa-bowl-food"></i>
+                        <p>Dining Enthusiast</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+<!-- nav end -->
+
+<!-- Room Start -->
+<div class="container" id="room">
+    <h2>Our Rooms Types and Facilities</h2>
+    <hr class="line1">
+    <div class="row">
+        <div class="col-xl-6 my-5">
+            <div class="room-type my-5 shadow">
+                <img src="./assets/img/single room" class="w-100" alt="">
+                <div class="room-detail p-4">
+                    <h4>Single Room</h4>
+                    <h5 class="d-inline">Room Size: </h5>
+                    <p class="d-inline">40sqm</p>
+                    <p>Unwind in our Pacific Club Junior Suite, which offers views of Shwedagon Pagoda and access to exclusive Pacific Club privileges.</p>
+                    <h5 class="d-inline">Cost : </h5>
+                    <p class="d-inline">50,000 Kyats/Night</p>
+                    <button class="btn btn-gold w-100 mt-4">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6 my-5">
+            <div class="room-type my-5 shadow">
+                <img src="./assets/img/single room" class="w-100" alt="">
+                <div class="room-detail p-4">
+                    <h4>Single Room</h4>
+                    <h5 class="d-inline">Room Size: </h5>
+                    <p class="d-inline">40sqm</p>
+                    <p>Unwind in our Pacific Club Junior Suite, which offers views of Shwedagon Pagoda and access to exclusive Pacific Club privileges.</p>
+                    <h5 class="d-inline">Cost : </h5>
+                    <p class="d-inline">50,000 Kyats/Night</p>
+                    <button class="btn btn-gold w-100 mt-4">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6">
+            <div class="room-type my-5 shadow">
+                <img src="./assets/img/single room" class="w-100" alt="">
+                <div class="room-detail p-4">
+                    <h4>Single Room</h4>
+                    <h5 class="d-inline">Room Size: </h5>
+                    <p class="d-inline">40sqm</p>
+                    <p>Unwind in our Pacific Club Junior Suite, which offers views of Shwedagon Pagoda and access to exclusive Pacific Club privileges.</p>
+                    <h5 class="d-inline">Cost : </h5>
+                    <p class="d-inline">50,000 Kyats/Night</p>
+                    <button class="btn btn-gold w-100 mt-4">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6">
+            <div class="room-type my-5 shadow">
+                <img src="./assets/img/single room" class="w-100" alt="">
+                <div class="room-detail p-4">
+                    <h4>Single Room</h4>
+                    <h5 class="d-inline">Room Size: </h5>
+                    <p class="d-inline">40sqm</p>
+                    <p>Unwind in our Pacific Club Junior Suite, which offers views of Shwedagon Pagoda and access to exclusive Pacific Club privileges.</p>
+                    <h5 class="d-inline">Cost : </h5>
+                    <p class="d-inline">50,000 Kyats/Night</p>
+                    <button class="btn btn-gold w-100 mt-4">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6">
+            <div class="room-type my-5 shadow">
+                <img src="./assets/img/single room" class="w-100" alt="">
+                <div class="room-detail p-4">
+                    <h4>Single Room</h4>
+                    <h5 class="d-inline">Room Size: </h5>
+                    <p class="d-inline">40sqm</p>
+                    <p>Unwind in our Pacific Club Junior Suite, which offers views of Shwedagon Pagoda and access to exclusive Pacific Club privileges.</p>
+                    <h5 class="d-inline">Cost : </h5>
+                    <p class="d-inline">50,000 Kyats/Night</p>
+                    <button class="btn btn-gold w-100 mt-4">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6">
+            <div class="room-type my-5 shadow">
+                <img src="./assets/img/single room" class="w-100" alt="">
+                <div class="room-detail p-4">
+                    <h4>Single Room</h4>
+                    <h5 class="d-inline">Room Size: </h5>
+                    <p class="d-inline">40sqm</p>
+                    <p>Unwind in our Pacific Club Junior Suite, which offers views of Shwedagon Pagoda and access to exclusive Pacific Club privileges.</p>
+                    <h5 class="d-inline">Cost : </h5>
+                    <p class="d-inline">50,000 Kyats/Night</p>
+                    <button class="btn btn-gold w-100 mt-4">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- Room End -->
+
+
+
+
+
+
+
+<!-- Exclusive Deal Start -->
+<div class="container-fluid bg-gold py-5 text-white" style="overflow: hidden;">
+    <div class="container">
+        <h4 class="leftin">Be the first to know about our exclusive deals</h4>
+        <div class="input-group mb-3 rightin">
+            <input type="text" class="form-control" placeholder="Enter Your Email">
+            <button class="btn btn-dark" type="button" id="button-addon2">Subscribe</button>
+        </div>      
+    </div>
+</div>
+<!-- Exclusive Deal End -->
+
+<!-- Popup Chat Window Start-->
+<button class="open-button btn" onclick="openForm()"><i class="fa-brands fa-facebook-messenger"></i></button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<!-- Popup End -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+<!-- footer start -->
+<footer class="bg-dark goldText pt-5 pb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 my-3">
+                <img class="d-block" src="./assets/img/bagan-logo.png" width="100px" alt="">
+                <h5 class="text-white">ROYAL PALACE</h5>
+                <p>HOTEL & RESORT</p>
+                <p>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter mx-2"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </p>
+            </div>
+            <div class="col-xl-3 my-3">
+                <h5 class="text-light mb-4">FOODS & DRINK</h5>
+                <p class="text-light">Bagan Traditional Foods</p>
+                <p class="text-light">Western Foods</p>
+                <p class="text-light">Chinese Foods</p>
+                <p class="text-light">Wines & Beers</p>
+            </div>
+            <div class="col-xl-3 my-3">
+                <h5 class="text-light mb-4">QUICK LINKS</h5>
+                <a href="" class="text-decoration-none text-white d-block mb-2">HOME</a>
+                <a href="" class="text-decoration-none text-white d-block mb-2">ABOUT</a>
+                <a href="" class="text-decoration-none text-white d-block mb-2">SERVICES</a>
+                <a href="" class="text-decoration-none text-white d-block mb-2">ROOMS</a>
+                <a href="" class="text-decoration-none text-white d-block mb-2">BLOGS</a>
+            </div>
+            <div class="col-xl-3 my-3">
+                <h5 class="text-light mb-4">CONTACT US</h5>
+                <p class="text-white"><i class="fa-solid fa-phone-volume me-2"></i> +959421023714</p>
+                <p class="text-white"><i class="fa-solid fa-envelope me-2"></i> info@royalpalacehotel.com</p>
+                <p class="text-white">
+                    <i class="fa-solid fa-map-location-dot me-2"></i>
+                    Kyansittha Road, Nyaung Oo 
+                   <span class="divided">Township Mandalay Division,</span>
+                   <span class="divided">Myanmar.</span>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="text-center pt-3">All Rights Reserved 2023. Design & Developed By <a class="text-decoration-none text-white" href="https://www.facebook.com/profile.php?id=100087413634026" target="_blank">WLK-TECH</a></p>
+</footer>
+<!-- footer end -->
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/b829c5162c.js" crossorigin="anonymous"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/count.js"></script>
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".zoomin");
+          
+            for (var i = 0; i < reveals.length; i++) {
+              var windowHeight = window.innerHeight;
+              var elementTop = reveals[i].getBoundingClientRect().top;
+              var elementVisible = 150;
+          
+              if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+              } else {
+                reveals[i].classList.remove("active");
+              }
+            }
+
+            var leftin = document.querySelectorAll(".leftin");
+          
+            for (var i = 0; i < leftin.length; i++) {
+              var windowHeight = window.innerHeight;
+              var elementTop = leftin[i].getBoundingClientRect().top;
+              var elementVisible = 150;
+          
+              if (elementTop < windowHeight - elementVisible) {
+                leftin[i].classList.add("Leftin");
+              } else {
+                leftin[i].classList.remove("Leftin");
+              }
+            }
+          
+
+            var rightin = document.querySelectorAll(".rightin");
+          
+            for (var i = 0; i < rightin.length; i++) {
+              var windowHeight = window.innerHeight;
+              var elementTop = rightin[i].getBoundingClientRect().top;
+              var elementVisible = 150;
+          
+              if (elementTop < windowHeight - elementVisible) {
+                rightin[i].classList.add("Rightin");
+              } else {
+                rightin[i].classList.remove("Rightin");
+              }
+            }
+        }
+          
+          window.addEventListener("scroll", reveal);
+        
+        var loader = document.getElementById('preloader');
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
+</body>
+</html>
+
+<!-- Modal for Login/SignUp Form -->
+<!-- The Modal -->
+<div class="modal" id="login">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+  
+        <!-- Modal Body -->
+        <div class="bg-modal">
+          <div class="row">
+            <div class="col-md-6 bg-light">
+                <h4 class="text-center my-3">DISCOVERY Sign In</h4>
+                <form action="">
+                    <div class="my-3 px-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" name="email" placeholder="you@example.com">
+                    </div>
+                    <div class="my-3 px-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" placeholder="******">
+                    </div>
+                    <div class="my-3 px-3">
+                        <button class="btn btn-gold w-100 mb-3">SIGN IN</button>
+                        <a class="goldText" href="">Forget Password</a>
+                    </div>
+                    <div class="my-3 px-3">
+                        <div class="row">
+                            <div class="col-5">
+                                <hr class="div w-100">
+                            </div>
+                            <div class="col-2">
+                                <p class="text-center px-0 mx-0">OR</p>
+                            </div>
+                            <div class="col-5">
+                                <hr class="div w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-3 px-3 ">
+                        <button class="btn btn-primary w-100 mb-3 "><i class="fa-brands fa-facebook text-white me-2"></i> Login with Facebook</button>
+                    </div>
+                    <div class="my-3 px-3 ">
+                        <button class="btn btn-outline-dark w-100 mb-3 "><img src="./assets/img/google.png" class="me-2" width="25px" alt=""> Sign in with Google</button>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="col-md-6 bg-dark goldText px-5 py-5">
+                <button type="button" class="btn-close closeBtn" data-bs-dismiss="modal"></button>
+                <h4 class="text-start text-md-center">Join Us Today</h4>
+                <div class="d-none d-md-block mt-5">
+                    <h6 class="text-center">Benefits of Royal Palace Hotel 
+                        <br> DISCOVERY</h6>
+                     <p class="text-start my-3"><i class="fa-solid fa-award me-2"></i>10% savings year-round on Best Available 
+                     <span class="ms-4">Rate</span></p>
+                     <p class="text-start my-3"><i class="fa-solid fa-coins me-2"></i>Instant currency rewards on eligible 
+                        <span class="ms-4">spend</span></p>
+                     <p class="text-start my-3"><i class="fa-solid fa-utensils me-2"></i> Up to 25% savings on total dining bill</p>
+                     <p class="text-start my-3"><i class="fa-solid fa-gift me-2"></i>Exclusive birthday savings and privileges</p>
+                     <p class="text-start my-3"><i class="fa-solid fa-lock-open me-2"></i> Enjoy complimentary room upgrades*</p>
+                </div>
+                <div class="d-block d-md-none">
+                    <p>Receive Exclusive Membership Benefits!</p>
+                    
+                </div>
+                
+                <button class="btn btn-lightgold w-100 mt-4">REGISTER</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

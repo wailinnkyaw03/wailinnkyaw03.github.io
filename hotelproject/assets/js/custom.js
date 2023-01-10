@@ -223,3 +223,37 @@ $(document).ready(function () {
         ]
       });
 });
+
+//Read More Read Less2
+jQuery(function ($) {
+	function AddReadMore() {
+	   //This limit you can set after how much characters you want to show Read More.
+	   var carLmt = 50;
+	   // Text to show when text is collapsed
+	   var readMoreTxt = " ...read more";
+	   // Text to show when text is expanded
+	   var readLessTxt = " read less";
+ 
+ 
+	   //Traverse all selectors with this class and manipulate HTML part to show Read More
+	   $(".add-read-more1").each(function () {
+		  if ($(this).find(".first-section1").length)
+			 return;
+ 
+		  var allstr = $(this).text();
+		  if (allstr.length > carLmt) {
+			 var firstSet = allstr.substring(0, carLmt);
+			 var secdHalf = allstr.substring(carLmt, allstr.length);
+			 var strtoadd = firstSet + "<span class='second-section1'>" + secdHalf + "</span><span class='read-more1'  title='Click to Show More'>" + readMoreTxt + "</span><span class='read-less1' title='Click to Show Less'>" + readLessTxt + "</span>";
+			 $(this).html(strtoadd);
+		  }
+	   });
+ 
+	   //Read More and Read Less Click Event binding
+	   $(document).on("click", ".read-more1,.read-less1", function () {
+		  $(this).closest(".add-read-more1").toggleClass("show-less-content1 show-more-content1");
+	   });
+	}
+ 
+	AddReadMore();
+ });

@@ -457,7 +457,8 @@ i{
     margin-left: 30px;
     display: block;
 }
-/* Scroll to top button */
+
+/* Scroll to top button for index.html*/
 
 #myBtn {
     display: none; /* Hidden by default */
@@ -478,6 +479,11 @@ i{
 #myBtn:hover {
     background-color: rgba(2, 2, 2, 0.7); /* Add a dark-grey background on hover */
 }
+
+/* Scroll to top button for room.html*/
+
+
+
 
 /* Popup Chat Start */
 * {box-sizing: border-box;}

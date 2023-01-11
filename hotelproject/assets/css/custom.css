@@ -430,6 +430,7 @@ i{
 
 .add-read-more.show-more-content .read-more {
    display: none;
+   font-family: 'Poppins', sans-serif;
 }
 
 .add-read-more .read-more,

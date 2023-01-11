@@ -691,3 +691,9 @@ i{
 #service{
     margin-top: 200px;
 }
+.v-line{
+    background-color: #AD8E3D;
+    padding: 1px 3px;
+    margin-right: 10px;
+    
+}

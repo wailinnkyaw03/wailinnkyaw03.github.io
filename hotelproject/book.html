@@ -82,7 +82,7 @@
         <div class="collapse navbar-collapse" id="Navbar">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="text-decoration-none text-dark d-block my-3" href="">
+                    <a class="text-decoration-none text-dark d-block my-3" href="managebook.html">
                         <i class="fa-solid fa-list"></i> Manage Booking
                     </a>
                 </li>
@@ -92,7 +92,7 @@
                     </a>
                 </li>
                 <li class="nav-item ms-5">
-                    <a class="btn btn-book" href="">
+                    <a class="btn btn-book" href="book.html">
                         BOOK NOW
                     </a>
                 </li>
@@ -137,7 +137,7 @@
             <a class="text-decoration-none text-dark d-block my-3" href="" data-bs-toggle="modal" data-bs-target="#login">
                 <i class="fa-solid fa-circle-user"></i> Sign In/Up & Save 10%
             </a>
-            <a class="text-decoration-none text-dark d-block my-3" href="">
+            <a class="text-decoration-none text-dark d-block my-3" href="managebook.html">
                 <i class="fa-solid fa-list"></i> Manage Booking
             </a>
             <hr class="line">
@@ -214,9 +214,67 @@
 </div>
 <!-- nav end -->
 
-<div class="container-fluid bg-light text-dark booking py-5">
-    <div class="container pt-5">
-        <h1 class="goldText mt-5">Manage Booking</h1>
+<!-- Booking Start -->
+<div style="margin-top:100px;" id="booking">
+    <h3 class="goldText mb-5 container"><span class="v-line"></span> Plan Your Stay</h3>
+    <div class="container bg-dark p-3 px-5 goldText rounded shadow-lg">
+        <p id="book-detail"></p>
+        <div class="text-end">
+            <button class="btn goldText" id="editform">Edit Selection</button>
+            <button class="btn goldText" id="hideform">Hide</button>
+        </div>
+        
+        <form action="book.html" id="booking-form">
+            <div class="row">
+                <div class="col-6 col-lg-3 my-3">
+                    <div>
+                        <label class="form-label" for="checkIn">CHECK IN</label>
+                    </div>
+                    <div>
+                        <input class="form-control" type="date" name="checkIn" id="checkIn" value="2023-01-01">
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 my-3">
+                    <div>
+                        <label class="form-label" for="checkOut">CHECK OUT</label>
+                    </div>
+                    <div>
+                        <input class="form-control" type="date" name="checkOut" id="checkOut" value="2023-01-01">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 my-3">
+                    
+                    <div class="booking-form__input guests-input">
+                        <label for="guests-input-btn" class="form-label">ROOMS</label>
+                        <button name="guests-btn" id="guests-input-btn" class="btnopt">1 guest</button>
+                        <div class="guests-input__options" id="guests-input-options">
+                            <div>
+                                <span class="guests-input__ctrl minus" id="adults-subs-btn">-</span><!-- /.guests-input__ctrl -->
+                                <span class="guests-input__value"><span id="guests-count-adults">1</span>Adults</span><!-- /.guests-input__value -->
+                                <span class="guests-input__ctrl plus" id="adults-add-btn">+</span><!-- /.guests-input__ctrl -->
+                            </div>
+                            <div>
+                                <span class="guests-input__ctrl minus" id="children-subs-btn">-</span><!-- /.guests-input__ctrl -->
+                                <span class="guests-input__value"><span id="guests-count-children">0</span>Children</span><!-- /.guests-input__value -->
+                                <span class="guests-input__ctrl plus" id="children-add-btn">+</span><!-- /.guests-input__ctrl -->
+                            </div>
+                        </div><!-- /.guests-input__options -->
+                    </div><!-- /.booking-form__input -->
+                </div>
+                <div class="col-lg-3 col-12">
+                    <button class="btn btn-gold my-5 w-100">BOOK NOW</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Booking End -->
+
+
+
+<div class="container-fluid text-dark">
+    <div class="container pt-2">
+        
         <div class="row">
             <div class="col-md-6">
                 
@@ -393,6 +451,44 @@
         window.addEventListener("load", function(){
             loader.style.display = "none";
         })
+
+        
+        //  Scroll to top for index.html
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        $("#booking-form").hide();
+        $("#hideform").hide();
+        $("#editform").show();
+        $("#editform").click(function(){
+            $("#booking-form").show();
+            $("#editform").hide();
+            $("#hideform").show();
+        })
+        $("#hideform").click(function(){
+            $("#editform").show();
+            $("#booking-form").hide();
+            $("#hideform").hide();
+        })
+
     </script>
 </body>
 </html>

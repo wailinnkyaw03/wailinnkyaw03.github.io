@@ -560,13 +560,21 @@ i{
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
-
+.book-text{
+    position: absolute;
+    top: 900px;
+    visibility: hidden;
+}
 .booking{
-    margin-top: 50px;
+    margin: 100px 0px;
 }
 .backColor{
     background-color: #cacaca;
     padding: 20px 50px;
+}
+
+#booking{
+    padding-top: 100px;
 }
 
 /* about.html */
@@ -671,6 +679,22 @@ i{
     }
     100%{
         transform:translateX(0);
+        visibility: visible;
+    }
+}
+.slideup-in{
+    animation: moveup 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes moveup{
+    0%{
+        transform: translateY(100px);
+        visibility: visible;
+    }
+    100%{
+        transform:translateY(0);
         visibility: visible;
     }
 }

@@ -734,4 +734,16 @@ i{
 }
 .room-card{
     border: 2px solid rgb(187, 2, 2);
+    background-color: rgba(255, 152, 152, 0.1);
+}
+.btn-outline-gold{
+    border: 1px solid #AD8E3D;
+}
+.btn-outline-gold:hover{
+    background-color: #AD8E3D;
+    color: #fff;
+}
+.room-card1{
+    border: 2px solid rgb(52, 52, 52);
+    width: 100%;
 }

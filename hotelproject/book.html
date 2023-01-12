@@ -214,10 +214,7 @@
 </div>
 <!-- nav end -->
 
-<div class="container mb-5">
-    <div class="row">
-        <div class="col-xl-4">
-            <!-- Booking Start -->
+<!-- Booking Start -->
             <div style="margin-top:100px;" id="booking" class="container">
                 <h3 class="goldText mb-5 container"><span class="v-line"></span> Plan Your Stay</h3>
                 <div class="container bg-dark p-3 px-5 goldText rounded shadow-lg">
@@ -229,7 +226,7 @@
                     
                     <form action="book.html" id="booking-form">
                         <div class="row">
-                            <div class="col-12 col-lg-12 my-3">
+                            <div class="col-12 col-lg-3 my-3">
                                 <div>
                                     <label class="form-label" for="checkIn">CHECK IN</label>
                                 </div>
@@ -237,7 +234,7 @@
                                     <input class="form-control" type="date" name="checkIn" id="checkIn" value="2023-01-01">
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-12 my-3">
+                            <div class="col-12 col-lg-3 my-3">
                                 <div>
                                     <label class="form-label" for="checkOut">CHECK OUT</label>
                                 </div>
@@ -245,7 +242,7 @@
                                     <input class="form-control" type="date" name="checkOut" id="checkOut" value="2023-01-01">
                                 </div>
                             </div>
-                            <div class="col-lg-12 col-12 my-3">
+                            <div class="col-lg-3 col-12 my-3">
                                 
                                 <div class="booking-form__input guests-input">
                                     <label for="guests-input-btn" class="form-label">ROOMS</label>
@@ -264,60 +261,70 @@
                                     </div><!-- /.guests-input__options -->
                                 </div><!-- /.booking-form__input -->
                             </div>
-                            <div class="col-lg-12 col-12">
+                            <div class="col-lg-3 col-12">
                                 <button class="btn btn-gold my-5 w-100">BOOK NOW</button>
                             </div>
                         </div>
                     </form>
                 </div>
-                <div class="mt-5">
-                    <div class=" backColor px-4 p-3 rounded shadow">
-                        <h5 class="goldText mb-4">CONTACT US</h5>
-                        <p class="text-dark"><i class="fa-solid fa-phone-volume me-2"></i> +951 011212</p>
-                        <p class="text-dark"><i class="fa-solid fa-envelope me-2"></i> booking@royalpalacehotel.com</p>
-                        <p class="text-dark">
-                        <i class="fa-solid fa-map-location-dot me-2"></i>
-                        Kyansittha Road, Nyaung Oo 
-                       <span class="divided">Township Mandalay Division,</span>
-                       <span class="divided">Myanmar.</span>
-                        </p>
+            </div>
+<!-- Booking End -->
+
+
+<div class="container my-5">
+    <div class="container-fluid text-dark">
+        <h3 class="goldText mb-5"><span class="v-line"></span>Room Types & Prices</h3>
+        <div class="row mb-5">
+            <div class="col-2">
+                <button class="btn btn-outline-gold w-100" id="allPrice">All Prices</button>
+            </div>
+            <div class="col-2">
+                <button class="btn btn-outline-gold w-100" id="deluxe">Deluxe Room</button>
+            </div>
+            <div class="col-2">
+                <button class="btn btn-outline-gold w-100" id="president">Presidential Room</button>
+            </div>
+            <div class="col-2">
+                <button class="btn btn-outline-gold w-100" id="family">Family Room</button>
+            </div>
+            <div class="col-2">
+                <button class="btn btn-outline-gold w-100" id="double">Double Room</button>
+            </div>
+            <div class="col-2">
+                <button class="btn btn-outline-gold w-100" id="single">Single Room</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mb-5 deluxe">
+                <div class="col-lg-6 px-0">
+                    <div class="book-slide pb-0 mb-0">
+                        <div><img src="./assets/img/deluxe.png" class="w-100" alt=""></div>
+                        <div><img src="./assets/img/double room.png" class="w-100" alt=""></div>
+                        <div><img src="./assets/img/familyroom.png" class="w-100" alt=""></div>
+                        <div><img src="./assets/img/presidential suite.png" class="w-100" alt=""></div>
+                    </div>
+                    <div class="book-card-text px-3 py-3 lightColor">
+                        <h3 class="goldText">Deluxe Room</h3>
+                        <button class="bed" id="deluxeTwinBed">
+                            <img src="./assets/img/twinBed.png" width="25px" alt="">
+                            Twin Beds
+                        </button>
+                        <button class="bed" id="deluxeKingBed">
+                            <img src="./assets/img/kingBed.png" width="25px" alt="">
+                            King Bed
+                        </button>
+                        <p class="mb-0 pb-0 mt-2 pt-2">Room Size: <span>60sqm</span></p>
+                        <p>City View</p>
+                        <p align="justify">Unwind in our Deluxe Room, which features floor-to-ceiling windows, separate walk-in shower and bathtub as well as a work station.</p>
                     </div>
                 </div>
-            </div>
-            <!-- Booking End -->
-        </div>
-        <div class="col-xl-8">
-            <div class="container-fluid text-dark" style="margin-top: 200px;">
-                <h3 class="goldText mb-5 container"><span class="v-line"></span> Room Types & Prices</h3>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 px-0">
-                            <div class="book-slide pb-0 mb-0">
-                                <div><img src="./assets/img/deluxe.png" class="w-100" alt=""></div>
-                                <div><img src="./assets/img/double room.png" class="w-100" alt=""></div>
-                                <div><img src="./assets/img/familyroom.png" class="w-100" alt=""></div>
-                                <div><img src="./assets/img/presidential suite.png" class="w-100" alt=""></div>
-                            </div>
-                            <div class="book-card-text px-3 py-3 lightColor">
-                                <h3 class="goldText">Deluxe Room</h3>
-                                <button class="bed" id="deluxeTwinBed">
-                                    <img src="./assets/img/twinBed.png" width="25px" alt="">
-                                    Twin Beds
-                                </button>
-                                <button class="bed" id="deluxeKingBed">
-                                    <img src="./assets/img/kingBed.png" width="25px" alt="">
-                                    King Bed
-                                </button>
-                                <p class="mb-0 pb-0 mt-2 pt-2">Room Size: <span>60sqm</span></p>
-                                <p>City View</p>
-                                <p align="justify">Unwind in our Deluxe Room, which features floor-to-ceiling windows, separate walk-in shower and bathtub as well as a work station.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 px-0 mx-0">
-                            <div class="room-card">
-                                <small class="d-block bg-danger px-3 py-1 text-white"><i class="fa-solid fa-bolt text-white"></i>
-                                    MOST POPULAR RATE
-                                </small>
+                <div class="col-lg-6 px-0 mx-0">
+                    <div class="room-card">
+                        <small class="d-block bg-danger px-3 py-1 text-white"><i class="fa-solid fa-bolt text-white"></i>
+                            MOST POPULAR RATE
+                        </small>
+                        <div class="row">
+                            <div class="col-lg-6">
                                 <div class="px-3 py-3">
                                     <h5>Exclusively Yours</h5>
                                     <em>Enjoy up to 30% savings on stays</em>
@@ -327,13 +334,577 @@
                                         <li>No Deposit Required</li>
                                     </ul>
                                 </div>
-                               
-
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-3">
+                                    <h5>Member Price</h5>
+                                    <small class="text-secondary" style="text-decoration:line-through;">MMK 300,000</small>
+                                    <h3>MMK 280,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-gold w-100" data-bs-toggle="modal" data-bs-target="#login">SIGN UP AND BOOK</button>
+                                </div>
+                                <div class="p-3">
+                                    <h5>Regular Price</h5>
+                                    <!-- <small class="text-secondary" style="text-decoration:line-through;">MMK 300,000</small> -->
+                                    <h3>MMK 300,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-outline-gold w-100">BOOK NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card1">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="px-3 py-3">
+                                    <h5>Exclusively Yours with Breakfast</h5>
+                                    <em>Enjoy up to 30% savings on stays</em>
+                                    <ul>
+                                        <li>Complimentary daily breakfast</li>
+                                        <li>Complimentary Internet Access</li>
+                                        <li>DISCOVERY Members enjoy additional 15% savings</li>
+                                        <li>No Deposit Required</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-3">
+                                    <h5>Member Price</h5>
+                                    <small class="text-secondary" style="text-decoration:line-through;">MMK 350,000</small>
+                                    <h3>MMK 300,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-gold w-100" data-bs-toggle="modal" data-bs-target="#login">SIGN UP AND BOOK</button>
+                                </div>
+                                <div class="p-3">
+                                    <h5>Regular Price</h5>
+                                    <!-- <small class="text-secondary" style="text-decoration:line-through;">MMK 300,000</small> -->
+                                    <h3>MMK 350,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-outline-gold w-100">BOOK NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card1">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="px-3 py-3">
+                                    <h5>Flexible Rate</h5>
+                                    <em>Enjoy greater flexibility for your stay</em>
+                                    <ul>
+                                        <li>Complimentary in-room Internet access</li>
+                                        <li>No Deposit Required upon reservation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-3">
+                                    <h5>Member Price</h5>
+                                    <small class="text-secondary" style="text-decoration:line-through;">MMK 380,000</small>
+                                    <h3>MMK 350,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-gold w-100" data-bs-toggle="modal" data-bs-target="#login">SIGN UP AND BOOK</button>
+                                </div>
+                                <div class="p-3">
+                                    <h5>Regular Price</h5>
+                                    <!-- <small class="text-secondary" style="text-decoration:line-through;">MMK 300,000</small> -->
+                                    <h3>MMK 380,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-outline-gold w-100">BOOK NOW</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row mb-5 president">
+                <div class="col-lg-6 px-0">
+                    <div class="book-slide pb-0 mb-0">
+                        <div><img src="./assets/img/deluxe.png" class="w-100" alt=""></div>
+                        <div><img src="./assets/img/double room.png" class="w-100" alt=""></div>
+                        <div><img src="./assets/img/familyroom.png" class="w-100" alt=""></div>
+                        <div><img src="./assets/img/presidential suite.png" class="w-100" alt=""></div>
+                    </div>
+                    <div class="book-card-text px-3 py-3 lightColor">
+                        <h3 class="goldText">Presidential Room</h3>
+                        <button class="bed" id="deluxeTwinBed">
+                            <img src="./assets/img/twinBed.png" width="25px" alt="">
+                            Twin Beds
+                        </button>
+                        <button class="bed" id="deluxeKingBed">
+                            <img src="./assets/img/kingBed.png" width="25px" alt="">
+                            King Bed
+                        </button>
+                        <p class="mb-0 pb-0 mt-2 pt-2">Room Size: <span>60sqm</span></p>
+                        <p>City View</p>
+                        <p align="justify">Unwind in our Deluxe Room, which features floor-to-ceiling windows, separate walk-in shower and bathtub as well as a work station.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-0 mx-0">
+                    <div class="room-card">
+                        <small class="d-block bg-danger px-3 py-1 text-white"><i class="fa-solid fa-bolt text-white"></i>
+                            MOST POPULAR RATE
+                        </small>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="px-3 py-3">
+                                    <h5>Exclusively Yours</h5>
+                                    <em>Enjoy up to 30% savings on stays</em>
+                                    <ul>
+                                        <li>Complimentary Internet Access</li>
+                                        <li>DISCOVERY Members enjoy additional 15% savings</li>
+                                        <li>No Deposit Required</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-3">
+                                    <h5>Member Price</h5>
+                                    <small class="text-secondary" style="text-decoration:line-through;">MMK 500,000</small>
+                                    <h3>MMK 480,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-gold w-100" data-bs-toggle="modal" data-bs-target="#login">SIGN UP AND BOOK</button>
+                                </div>
+                                <div class="p-3">
+                                    <h5>Regular Price</h5>
+                                    <!-- <small class="text-secondary" style="text-decoration:line-through;">MMK 300,000</small> -->
+                                    <h3>MMK 500,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-outline-gold w-100">BOOK NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card1">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="px-3 py-3">
+                                    <h5>Exclusively Yours with Breakfast</h5>
+                                    <em>Enjoy up to 30% savings on stays</em>
+                                    <ul>
+                                        <li>Complimentary daily breakfast</li>
+                                        <li>Complimentary Internet Access</li>
+                                        <li>DISCOVERY Members enjoy additional 15% savings</li>
+                                        <li>No Deposit Required</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-3">
+                                    <h5>Member Price</h5>
+                                    <small class="text-secondary" style="text-decoration:line-through;">MMK 550,000</small>
+                                    <h3>MMK 500,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-gold w-100" data-bs-toggle="modal" data-bs-target="#login">SIGN UP AND BOOK</button>
+                                </div>
+                                <div class="p-3">
+                                    <h5>Regular Price</h5>
+                                    <!-- <small class="text-secondary" style="text-decoration:line-through;">MMK 300,000</small> -->
+                                    <h3>MMK 550,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-outline-gold w-100">BOOK NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card1">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="px-3 py-3">
+                                    <h5>Flexible Rate</h5>
+                                    <em>Enjoy greater flexibility for your stay</em>
+                                    <ul>
+                                        <li>Complimentary in-room Internet access</li>
+                                        <li>No Deposit Required upon reservation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-3">
+                                    <h5>Member Price</h5>
+                                    <small class="text-secondary" style="text-decoration:line-through;">MMK 580,000</small>
+                                    <h3>MMK 550,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-gold w-100" data-bs-toggle="modal" data-bs-target="#login">SIGN UP AND BOOK</button>
+                                </div>
+                                <div class="p-3">
+                                    <h5>Regular Price</h5>
+                                    <!-- <small class="text-secondary" style="text-decoration:line-through;">MMK 300,000</small> -->
+                                    <h3>MMK 580,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-outline-gold w-100">BOOK NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5 family">
+                <div class="col-lg-6 px-0">
+                    <div class="book-slide pb-0 mb-0">
+                        <div><img src="./assets/img/deluxe.png" class="w-100" alt=""></div>
+                        <div><img src="./assets/img/double room.png" class="w-100" alt=""></div>
+                        <div><img src="./assets/img/familyroom.png" class="w-100" alt=""></div>
+                        <div><img src="./assets/img/presidential suite.png" class="w-100" alt=""></div>
+                    </div>
+                    <div class="book-card-text px-3 py-3 lightColor">
+                        <h3 class="goldText">Family Room</h3>
+                        <button class="bed" id="deluxeTwinBed">
+                            <img src="./assets/img/twinBed.png" width="25px" alt="">
+                            Twin Beds
+                        </button>
+                        <button class="bed" id="deluxeKingBed">
+                            <img src="./assets/img/kingBed.png" width="25px" alt="">
+                            King Bed
+                        </button>
+                        <p class="mb-0 pb-0 mt-2 pt-2">Room Size: <span>60sqm</span></p>
+                        <p>City View</p>
+                        <p align="justify">Unwind in our Deluxe Room, which features floor-to-ceiling windows, separate walk-in shower and bathtub as well as a work station.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-0 mx-0">
+                    <div class="room-card">
+                        <small class="d-block bg-danger px-3 py-1 text-white"><i class="fa-solid fa-bolt text-white"></i>
+                            MOST POPULAR RATE
+                        </small>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="px-3 py-3">
+                                    <h5>Exclusively Yours</h5>
+                                    <em>Enjoy up to 30% savings on stays</em>
+                                    <ul>
+                                        <li>Complimentary Internet Access</li>
+                                        <li>DISCOVERY Members enjoy additional 15% savings</li>
+                                        <li>No Deposit Required</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-3">
+                                    <h5>Member Price</h5>
+                                    <small class="text-secondary" style="text-decoration:line-through;">MMK 250,000</small>
+                                    <h3>MMK 230,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-gold w-100" data-bs-toggle="modal" data-bs-target="#login">SIGN UP AND BOOK</button>
+                                </div>
+                                <div class="p-3">
+                                    <h5>Regular Price</h5>
+                                    <!-- <small class="text-secondary" style="text-decoration:line-through;">MMK 300,000</small> -->
+                                    <h3>MMK 250,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-outline-gold w-100">BOOK NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card1">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="px-3 py-3">
+                                    <h5>Exclusively Yours with Breakfast</h5>
+                                    <em>Enjoy up to 30% savings on stays</em>
+                                    <ul>
+                                        <li>Complimentary daily breakfast</li>
+                                        <li>Complimentary Internet Access</li>
+                                        <li>DISCOVERY Members enjoy additional 15% savings</li>
+                                        <li>No Deposit Required</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-3">
+                                    <h5>Member Price</h5>
+                                    <small class="text-secondary" style="text-decoration:line-through;">MMK 300,000</small>
+                                    <h3>MMK 250,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-gold w-100" data-bs-toggle="modal" data-bs-target="#login">SIGN UP AND BOOK</button>
+                                </div>
+                                <div class="p-3">
+                                    <h5>Regular Price</h5>
+                                    <!-- <small class="text-secondary" style="text-decoration:line-through;">MMK 300,000</small> -->
+                                    <h3>MMK 300,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-outline-gold w-100">BOOK NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card1">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="px-3 py-3">
+                                    <h5>Flexible Rate</h5>
+                                    <em>Enjoy greater flexibility for your stay</em>
+                                    <ul>
+                                        <li>Complimentary in-room Internet access</li>
+                                        <li>No Deposit Required upon reservation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-3">
+                                    <h5>Member Price</h5>
+                                    <small class="text-secondary" style="text-decoration:line-through;">MMK 330,000</small>
+                                    <h3>MMK 300,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-gold w-100" data-bs-toggle="modal" data-bs-target="#login">SIGN UP AND BOOK</button>
+                                </div>
+                                <div class="p-3">
+                                    <h5>Regular Price</h5>
+                                    <!-- <small class="text-secondary" style="text-decoration:line-through;">MMK 300,000</small> -->
+                                    <h3>MMK 330,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-outline-gold w-100">BOOK NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5 double">
+                <div class="col-lg-6 px-0">
+                    <div class="book-slide pb-0 mb-0">
+                        <div><img src="./assets/img/deluxe.png" class="w-100" alt=""></div>
+                        <div><img src="./assets/img/double room.png" class="w-100" alt=""></div>
+                        <div><img src="./assets/img/familyroom.png" class="w-100" alt=""></div>
+                        <div><img src="./assets/img/presidential suite.png" class="w-100" alt=""></div>
+                    </div>
+                    <div class="book-card-text px-3 py-3 lightColor">
+                        <h3 class="goldText">Double Room</h3>
+                        <button class="bed" id="deluxeTwinBed">
+                            <img src="./assets/img/twinBed.png" width="25px" alt="">
+                            Twin Beds
+                        </button>
+                        <button class="bed" id="deluxeKingBed">
+                            <img src="./assets/img/kingBed.png" width="25px" alt="">
+                            King Bed
+                        </button>
+                        <p class="mb-0 pb-0 mt-2 pt-2">Room Size: <span>60sqm</span></p>
+                        <p>City View</p>
+                        <p align="justify">Unwind in our Deluxe Room, which features floor-to-ceiling windows, separate walk-in shower and bathtub as well as a work station.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-0 mx-0">
+                    <div class="room-card">
+                        <small class="d-block bg-danger px-3 py-1 text-white"><i class="fa-solid fa-bolt text-white"></i>
+                            MOST POPULAR RATE
+                        </small>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="px-3 py-3">
+                                    <h5>Exclusively Yours</h5>
+                                    <em>Enjoy up to 30% savings on stays</em>
+                                    <ul>
+                                        <li>Complimentary Internet Access</li>
+                                        <li>DISCOVERY Members enjoy additional 15% savings</li>
+                                        <li>No Deposit Required</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-3">
+                                    <h5>Member Price</h5>
+                                    <small class="text-secondary" style="text-decoration:line-through;">MMK 200,000</small>
+                                    <h3>MMK 180,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-gold w-100" data-bs-toggle="modal" data-bs-target="#login">SIGN UP AND BOOK</button>
+                                </div>
+                                <div class="p-3">
+                                    <h5>Regular Price</h5>
+                                    <!-- <small class="text-secondary" style="text-decoration:line-through;">MMK 300,000</small> -->
+                                    <h3>MMK 200,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-outline-gold w-100">BOOK NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card1">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="px-3 py-3">
+                                    <h5>Exclusively Yours with Breakfast</h5>
+                                    <em>Enjoy up to 30% savings on stays</em>
+                                    <ul>
+                                        <li>Complimentary daily breakfast</li>
+                                        <li>Complimentary Internet Access</li>
+                                        <li>DISCOVERY Members enjoy additional 15% savings</li>
+                                        <li>No Deposit Required</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-3">
+                                    <h5>Member Price</h5>
+                                    <small class="text-secondary" style="text-decoration:line-through;">MMK 250,000</small>
+                                    <h3>MMK 200,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-gold w-100" data-bs-toggle="modal" data-bs-target="#login">SIGN UP AND BOOK</button>
+                                </div>
+                                <div class="p-3">
+                                    <h5>Regular Price</h5>
+                                    <!-- <small class="text-secondary" style="text-decoration:line-through;">MMK 300,000</small> -->
+                                    <h3>MMK 250,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-outline-gold w-100">BOOK NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card1">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="px-3 py-3">
+                                    <h5>Flexible Rate</h5>
+                                    <em>Enjoy greater flexibility for your stay</em>
+                                    <ul>
+                                        <li>Complimentary in-room Internet access</li>
+                                        <li>No Deposit Required upon reservation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-3">
+                                    <h5>Member Price</h5>
+                                    <small class="text-secondary" style="text-decoration:line-through;">MMK 280,000</small>
+                                    <h3>MMK 250,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-gold w-100" data-bs-toggle="modal" data-bs-target="#login">SIGN UP AND BOOK</button>
+                                </div>
+                                <div class="p-3">
+                                    <h5>Regular Price</h5>
+                                    <!-- <small class="text-secondary" style="text-decoration:line-through;">MMK 300,000</small> -->
+                                    <h3>MMK 280,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-outline-gold w-100">BOOK NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5 single">
+                <div class="col-lg-6 px-0">
+                    <div class="book-slide pb-0 mb-0">
+                        <div><img src="./assets/img/deluxe.png" class="w-100" alt=""></div>
+                        <div><img src="./assets/img/double room.png" class="w-100" alt=""></div>
+                        <div><img src="./assets/img/familyroom.png" class="w-100" alt=""></div>
+                        <div><img src="./assets/img/presidential suite.png" class="w-100" alt=""></div>
+                    </div>
+                    <div class="book-card-text px-3 py-3 lightColor">
+                        <h3 class="goldText">Single Room</h3>
+                        <button class="bed" id="deluxeTwinBed">
+                            <img src="./assets/img/twinBed.png" width="25px" alt="">
+                            Twin Beds
+                        </button>
+                        <button class="bed" id="deluxeKingBed">
+                            <img src="./assets/img/kingBed.png" width="25px" alt="">
+                            King Bed
+                        </button>
+                        <p class="mb-0 pb-0 mt-2 pt-2">Room Size: <span>60sqm</span></p>
+                        <p>City View</p>
+                        <p align="justify">Unwind in our Deluxe Room, which features floor-to-ceiling windows, separate walk-in shower and bathtub as well as a work station.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-0 mx-0">
+                    <div class="room-card">
+                        <small class="d-block bg-danger px-3 py-1 text-white"><i class="fa-solid fa-bolt text-white"></i>
+                            MOST POPULAR RATE
+                        </small>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="px-3 py-3">
+                                    <h5>Exclusively Yours</h5>
+                                    <em>Enjoy up to 30% savings on stays</em>
+                                    <ul>
+                                        <li>Complimentary Internet Access</li>
+                                        <li>DISCOVERY Members enjoy additional 15% savings</li>
+                                        <li>No Deposit Required</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-3">
+                                    <h5>Member Price</h5>
+                                    <small class="text-secondary" style="text-decoration:line-through;">MMK 120,000</small>
+                                    <h3>MMK 100,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-gold w-100" data-bs-toggle="modal" data-bs-target="#login">SIGN UP AND BOOK</button>
+                                </div>
+                                <div class="p-3">
+                                    <h5>Regular Price</h5>
+                                    <!-- <small class="text-secondary" style="text-decoration:line-through;">MMK 300,000</small> -->
+                                    <h3>MMK 120,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-outline-gold w-100">BOOK NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card1">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="px-3 py-3">
+                                    <h5>Exclusively Yours with Breakfast</h5>
+                                    <em>Enjoy up to 30% savings on stays</em>
+                                    <ul>
+                                        <li>Complimentary daily breakfast</li>
+                                        <li>Complimentary Internet Access</li>
+                                        <li>DISCOVERY Members enjoy additional 15% savings</li>
+                                        <li>No Deposit Required</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-3">
+                                    <h5>Member Price</h5>
+                                    <small class="text-secondary" style="text-decoration:line-through;">MMK 150,000</small>
+                                    <h3>MMK 120,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-gold w-100" data-bs-toggle="modal" data-bs-target="#login">SIGN UP AND BOOK</button>
+                                </div>
+                                <div class="p-3">
+                                    <h5>Regular Price</h5>
+                                    <!-- <small class="text-secondary" style="text-decoration:line-through;">MMK 300,000</small> -->
+                                    <h3>MMK 150,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-outline-gold w-100">BOOK NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card1">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="px-3 py-3">
+                                    <h5>Flexible Rate</h5>
+                                    <em>Enjoy greater flexibility for your stay</em>
+                                    <ul>
+                                        <li>Complimentary in-room Internet access</li>
+                                        <li>No Deposit Required upon reservation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-3">
+                                    <h5>Member Price</h5>
+                                    <small class="text-secondary" style="text-decoration:line-through;">MMK 180,000</small>
+                                    <h3>MMK 150,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-gold w-100" data-bs-toggle="modal" data-bs-target="#login">SIGN UP AND BOOK</button>
+                                </div>
+                                <div class="p-3">
+                                    <h5>Regular Price</h5>
+                                    <!-- <small class="text-secondary" style="text-decoration:line-through;">MMK 300,000</small> -->
+                                    <h3>MMK 180,000/night</h3>
+                                    <small class="d-block mb-3">Excluding Taxes</small>
+                                    <button class="btn btn-outline-gold w-100">BOOK NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>             
         </div>
     </div>
 </div>
@@ -541,6 +1112,93 @@
                 ]
             });
         });
+
+        $('#allPrice').click(function(){
+            $('.deluxe').show('slow');
+            $('.president').show('slow');
+            $('.family').show('slow');
+            $('.double').show('slow');
+            $('.single').show('slow');
+    
+            $('#allPrice').addClass('btn-gold');
+            $('#deluxe').removeClass('btn-gold');
+            $('#president').removeClass('btn-gold');
+            $('#family').removeClass('btn-gold');
+            $('#double').removeClass('btn-gold');
+            $('#single').removeClass('btn-gold');
+        })
+
+        $('#deluxe').click(function(){
+            $('.deluxe').show('slow');
+            $('.president').hide('slow');
+            $('.family').hide('slow');
+            $('.double').hide('slow');
+            $('.single').hide('slow');
+    
+            $('#allPrice').removeClass('btn-gold');
+            $('#deluxe').addClass('btn-gold');
+            $('#president').removeClass('btn-gold');
+            $('#family').removeClass('btn-gold');
+            $('#double').removeClass('btn-gold');
+            $('#single').removeClass('btn-gold');
+        })
+        $('#president').click(function(){
+            $('.deluxe').hide('slow');
+            $('.president').show('slow');
+            $('.family').hide('slow');
+            $('.double').hide('slow');
+            $('.single').hide('slow');
+    
+            $('#allPrice').removeClass('btn-gold');
+            $('#deluxe').removeClass('btn-gold');
+            $('#president').addClass('btn-gold');
+            $('#family').removeClass('btn-gold');
+            $('#double').removeClass('btn-gold');
+            $('#single').removeClass('btn-gold');
+        })
+        $('#family').click(function(){
+            $('.deluxe').hide('slow');
+            $('.president').hide('slow');
+            $('.family').show('slow');
+            $('.double').hide('slow');
+            $('.single').hide('slow');
+    
+            $('#allPrice').removeClass('btn-gold');
+            $('#deluxe').removeClass('btn-gold');
+            $('#president').removeClass('btn-gold');
+            $('#family').addClass('btn-gold');
+            $('#double').removeClass('btn-gold');
+            $('#single').removeClass('btn-gold');
+        })
+        $('#double').click(function(){
+            $('.deluxe').hide('slow');
+            $('.president').hide('slow');
+            $('.family').hide('slow');
+            $('.double').show('slow');
+            $('.single').hide('slow');
+    
+            $('#allPrice').removeClass('btn-gold');
+            $('#deluxe').removeClass('btn-gold');
+            $('#president').removeClass('btn-gold');
+            $('#family').removeClass('btn-gold');
+            $('#double').addClass('btn-gold');
+            $('#single').removeClass('btn-gold');
+        })
+        $('#single').click(function(){
+            $('.deluxe').hide('slow');
+            $('.president').hide('slow');
+            $('.family').hide('slow');
+            $('.double').hide('slow');
+            $('.single').show('slow');
+    
+            $('#allPrice').removeClass('btn-gold');
+            $('#deluxe').removeClass('btn-gold');
+            $('#president').removeClass('btn-gold');
+            $('#family').removeClass('btn-gold');
+            $('#double').removeClass('btn-gold');
+            $('#single').addClass('btn-gold');
+        })
+
 
         //$("#booking-form").hide();
         //$("#hideform").hide();

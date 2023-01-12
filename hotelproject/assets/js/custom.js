@@ -273,3 +273,18 @@ jQuery(function ($) {
  
 	AddReadMore();
  });
+
+$("#bookNow").click(function(){
+  let checkIn = $("#checkIn").val();
+  let checkOut = $("#checkOut").val();
+  $("#book-detail").text("Check-In Date:"+ checkIn, "Check-Out Date:"+ checkOut);
+
+
+  const d = new Date();
+  let Day = d.getDate();
+  if (checkIn < Day || checkOut <= Day ) {
+    alert("Name must be filled out");
+    return false;
+  }
+
+})

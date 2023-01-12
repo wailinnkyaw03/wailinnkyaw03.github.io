@@ -214,105 +214,109 @@
 </div>
 <!-- nav end -->
 
-<!-- Booking Start -->
-<div style="margin-top:100px;" id="booking">
-    <h3 class="goldText mb-5 container"><span class="v-line"></span> Plan Your Stay</h3>
-    <div class="container bg-dark p-3 px-5 goldText rounded shadow-lg">
-        <p id="book-detail"></p>
-        <div class="text-end">
-            <button class="btn goldText" id="editform">Edit Selection</button>
-            <button class="btn goldText" id="hideform">Hide</button>
-        </div>
-        
-        <form action="book.html" id="booking-form">
-            <div class="row">
-                <div class="col-6 col-lg-3 my-3">
-                    <div>
-                        <label class="form-label" for="checkIn">CHECK IN</label>
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-xl-4">
+            <!-- Booking Start -->
+            <div style="margin-top:100px;" id="booking" class="container">
+                <h3 class="goldText mb-5 container"><span class="v-line"></span> Plan Your Stay</h3>
+                <div class="container bg-dark p-3 px-5 goldText rounded shadow-lg">
+                    <p id="book-detail"></p>
+                    <div class="text-end">
+                        <button class="btn goldText" id="editform">Edit Selection</button>
+                        <button class="btn goldText" id="hideform">Hide</button>
                     </div>
-                    <div>
-                        <input class="form-control" type="date" name="checkIn" id="checkIn" value="2023-01-01">
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3 my-3">
-                    <div>
-                        <label class="form-label" for="checkOut">CHECK OUT</label>
-                    </div>
-                    <div>
-                        <input class="form-control" type="date" name="checkOut" id="checkOut" value="2023-01-01">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-12 my-3">
                     
-                    <div class="booking-form__input guests-input">
-                        <label for="guests-input-btn" class="form-label">ROOMS</label>
-                        <button name="guests-btn" id="guests-input-btn" class="btnopt">1 guest</button>
-                        <div class="guests-input__options" id="guests-input-options">
-                            <div>
-                                <span class="guests-input__ctrl minus" id="adults-subs-btn">-</span><!-- /.guests-input__ctrl -->
-                                <span class="guests-input__value"><span id="guests-count-adults">1</span>Adults</span><!-- /.guests-input__value -->
-                                <span class="guests-input__ctrl plus" id="adults-add-btn">+</span><!-- /.guests-input__ctrl -->
+                    <form action="book.html" id="booking-form">
+                        <div class="row">
+                            <div class="col-6 col-lg-6 my-3">
+                                <div>
+                                    <label class="form-label" for="checkIn">CHECK IN</label>
+                                </div>
+                                <div>
+                                    <input class="form-control" type="date" name="checkIn" id="checkIn" value="2023-01-01">
+                                </div>
                             </div>
-                            <div>
-                                <span class="guests-input__ctrl minus" id="children-subs-btn">-</span><!-- /.guests-input__ctrl -->
-                                <span class="guests-input__value"><span id="guests-count-children">0</span>Children</span><!-- /.guests-input__value -->
-                                <span class="guests-input__ctrl plus" id="children-add-btn">+</span><!-- /.guests-input__ctrl -->
+                            <div class="col-6 col-lg-6 my-3">
+                                <div>
+                                    <label class="form-label" for="checkOut">CHECK OUT</label>
+                                </div>
+                                <div>
+                                    <input class="form-control" type="date" name="checkOut" id="checkOut" value="2023-01-01">
+                                </div>
                             </div>
-                        </div><!-- /.guests-input__options -->
-                    </div><!-- /.booking-form__input -->
-                </div>
-                <div class="col-lg-3 col-12">
-                    <button class="btn btn-gold my-5 w-100">BOOK NOW</button>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
-<!-- Booking End -->
-
-
-
-<div class="container-fluid text-dark">
-    <div class="container pt-2">
-        
-        <div class="row">
-            <div class="col-md-6">
-                
-                <div class="mt-5 backColor">
-                    <form action="">
-                        <h3 class="mb-4">Reservation Details</h3>
-                        <div>
-                            <label for="confirm" class="form-label">Confirmation Number</label>
-                            <input type="number" class="form-control">
-                        </div>
-                        <div class="my-4">
-                            <label for="lname" class="form-label">Last Name</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="my-5">
-                            <button class="btn btn-gold">MANAGE YOUR BOOKING</button>
+                            <div class="col-lg-12 col-12 my-3">
+                                
+                                <div class="booking-form__input guests-input">
+                                    <label for="guests-input-btn" class="form-label">ROOMS</label>
+                                    <button name="guests-btn" id="guests-input-btn" class="btnopt">1 guest</button>
+                                    <div class="guests-input__options" id="guests-input-options">
+                                        <div>
+                                            <span class="guests-input__ctrl minus" id="adults-subs-btn">-</span><!-- /.guests-input__ctrl -->
+                                            <span class="guests-input__value"><span id="guests-count-adults">1</span>Adults</span><!-- /.guests-input__value -->
+                                            <span class="guests-input__ctrl plus" id="adults-add-btn">+</span><!-- /.guests-input__ctrl -->
+                                        </div>
+                                        <div>
+                                            <span class="guests-input__ctrl minus" id="children-subs-btn">-</span><!-- /.guests-input__ctrl -->
+                                            <span class="guests-input__value"><span id="guests-count-children">0</span>Children</span><!-- /.guests-input__value -->
+                                            <span class="guests-input__ctrl plus" id="children-add-btn">+</span><!-- /.guests-input__ctrl -->
+                                        </div>
+                                    </div><!-- /.guests-input__options -->
+                                </div><!-- /.booking-form__input -->
+                            </div>
+                            <div class="col-lg-12 col-12">
+                                <button class="btn btn-gold my-5 w-100">BOOK NOW</button>
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
-            <div class=" col-md-6">
-                <div class="mt-5 backColor">
-                    <h5 class="goldText mb-4">CONTACT US</h5>
-                    <p class="text-dark"><i class="fa-solid fa-phone-volume me-2"></i> +951 011212</p>
-                    <p class="text-dark"><i class="fa-solid fa-envelope me-2"></i> booking@royalpalacehotel.com</p>
-                    <p class="text-dark">
-                    <i class="fa-solid fa-map-location-dot me-2"></i>
-                    Kyansittha Road, Nyaung Oo 
-                   <span class="divided">Township Mandalay Division,</span>
-                   <span class="divided">Myanmar.</span>
-                </p>
+            <!-- Booking End -->
+        </div>
+        <div class="col-xl-8">
+            <div class="container-fluid text-dark" style="margin-top: 200px;">
+                <h3 class="goldText mb-5 container"><span class="v-line"></span> Room Types & Prices</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class=" backColor">
+                                <form action="">
+                                    <h3 class="mb-4">Reservation Details</h3>
+                                    <div>
+                                        <label for="confirm" class="form-label">Confirmation Number</label>
+                                        <input type="number" class="form-control">
+                                    </div>
+                                    <div class="my-4">
+                                        <label for="lname" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="my-5">
+                                        <button class="btn btn-gold">MANAGE YOUR BOOKING</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class=" col-md-6">
+                            <div class=" backColor">
+                                <h5 class="goldText mb-4">CONTACT US</h5>
+                                <p class="text-dark"><i class="fa-solid fa-phone-volume me-2"></i> +951 011212</p>
+                                <p class="text-dark"><i class="fa-solid fa-envelope me-2"></i> booking@royalpalacehotel.com</p>
+                                <p class="text-dark">
+                                <i class="fa-solid fa-map-location-dot me-2"></i>
+                                Kyansittha Road, Nyaung Oo 
+                               <span class="divided">Township Mandalay Division,</span>
+                               <span class="divided">Myanmar.</span>
+                            </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    
 </div>
+
+
 
 
 <!-- Exclusive Deal Start -->

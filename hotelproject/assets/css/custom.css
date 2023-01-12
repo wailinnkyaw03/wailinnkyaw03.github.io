@@ -222,9 +222,9 @@ i{
     font-size: 30px;
     cursor: pointer;
 }
-.left_arrow:hover, .right_arrow:hover{
+/* .left_arrow:hover, .right_arrow:hover{
     background-color: rgba(0, 0, 0, 0.3);
-}
+} */
 .right_arrow{
     position: absolute;
     z-index: 1;
@@ -721,4 +721,17 @@ i{
     padding: 1px 3px;
     margin-right: 10px;
     
+}
+.bed{
+    width: 120px;
+    height: 50px;
+    border: 1px solid #AD8E3D;
+    color: black;
+    font-size: 16px;
+}
+.lightColor{
+    background-color: rgb(232, 232, 232);
+}
+.room-card{
+    border: 2px solid rgb(187, 2, 2);
 }

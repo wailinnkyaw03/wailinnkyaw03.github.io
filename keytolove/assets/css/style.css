@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    
+}
+.logo{
+    font-family: 'Raleway', sans-serif;
+    color: #cc0000;
+}
+.link{
+    text-decoration: none;
+    color: #cc0000;
+    margin-right: 20px;
+}
+.link:hover{
+    letter-spacing: 2px;
+    transition: .6s;
+}
+.text-red{
+    color: #cc0000;
+}
+.btn-red{
+    background-color: #cc0000;
+    color: white;
+}
+.btn-red:hover{
+    background-color: #cc0000;
+    opacity: 0.8;
+}
+.btn-outline-red{
+    color: #cc0000;
+    border: 1px solid #cc0000;
+}
+.btn-outline-red:hover{
+    background-color: #cc0000;
+    color: white;
+}
+
+/* home intro */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 179, 255, 0.7)), url("../img/hero-image.jpeg");
+  
+    /* Set a specific height */
+    min-height: 80vh;
+    height: 50%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+  
+  /* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.left-slide-in{
+    animation: moveleft 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes moveleft{
+    0%{
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform:translateX(0);
+        visibility: visible;
+    }
+}
+.right-slide-in{
+    animation: moveright 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes moveright{
+    0%{
+        transform: translateX(100px);
+        visibility: visible;
+    }
+    100%{
+        transform:translateX(0);
+        visibility: visible;
+    }
+}
+/* home intro */
+
+/* about */
+.v-line{
+    background-color: #ffb3ff;
+    padding: 0 3px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+/* scroll animation */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+.zoomin{
+    position: relative;
+    transform: scale(0);
+    /* transform: translateY(150px); */
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.zoomin.Zoomin{
+    transform: scale(1);
+    opacity: 1;
+}
+.leftin{
+    position: relative;
+    transform: translateX(-500px);
+    /* transform: translateY(150px); */
+    opacity: 0;
+    transition: 1s all ease;
+}
+.leftin.Leftin{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.rightin{
+    position: relative;
+    transform: translateX(500px);
+    /* transform: translateY(150px); */
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.rightin.Rightin{
+    transform: translateX(0);
+    opacity: 1;
+}
+/* about */
+/* service */
+.service-card{
+    background-color: rgba(255, 179, 255, 0.2);
+    margin: 0px 10px;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+.service-card:hover{
+    transform: scale(0.9);
+    transition-duration: .6s;
+}
+.fa-person-chalkboard, .fa-gamepad, .fa-chalkboard-user{
+    padding: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 179, 255, 0.7);
+}
+/* service */
